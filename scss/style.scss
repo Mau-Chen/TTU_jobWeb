@@ -1,0 +1,267 @@
+@import "color";
+
+// Bootstrap 5 改變數
+// $headings-font-weight: 700;
+// $headings-line-height: 1.2;
+
+body {
+    footer {
+        display: none;
+    }
+
+    font-family: Arial,
+    Helvetica,
+    "微軟正黑體",
+    sans-serif;
+    font-size: 16px;
+    color: $Black;
+    background: $BackGround url("../img/bg.png") left top repeat;
+
+    .submitBtn {
+        button {
+            background-color: $TitleGreen;
+            border: 0;
+            font-weight: 700;
+            color: $White;
+
+            &:hover {
+                background-color: $TitleYellow;
+            }
+        }
+    }
+
+    // ===***登入頁***===
+    .container.login {
+        width: 400px;
+        height: 400px;
+        background-color: $White;
+        margin-top: calc(50vh - 250px);
+        border-radius: 50%;
+
+        h1.webtitle {
+            width: 337px;
+            height: 95px;
+            text-indent: -9999px;
+            background: transparent url("../img/logo.png") left top no-repeat;
+            margin-left: 20px;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            line-height: 2.5em;
+            text-align: center;
+            margin: 0;
+            font-weight: 700;
+            letter-spacing: 4.8px;
+        }
+
+        .formBox {
+            label {
+                letter-spacing: 10px;
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+
+        .createAccount {
+            a {
+                font-size: 20px;
+                display: block;
+                font-weight: 700;
+                color: $TitleGreen;
+                letter-spacing: 2px;
+
+                &:hover {
+                    color: $TitleYellow;
+                }
+            }
+        }
+    }
+
+    .Footer {
+        color: $Gray;
+        font-size: 0.8em;
+        line-height: 1.8em;
+        text-align: left;
+        padding: 0 10%;
+    }
+}
+
+// ===***燈箱***===
+#newAccount {
+    .btn-close {
+        color: $Gray;
+        border: 2px solid $Gray;
+
+        &:hover {
+            border-color: $Black;
+        }
+    }
+
+    .modal-content {
+
+        // background-color: red;
+        .modal-header {
+            h2 {
+                color: $TitleGreen;
+                letter-spacing: 0.8em;
+                font-weight: 700;
+            }
+        }
+
+        .modal-body {
+            overflow-x: hidden;
+
+            // ==上方提醒
+            .remind {
+                a {
+                    color: $TitleGreen;
+                }
+
+                svg {
+                    margin: 0 3px;
+                    font-size: 32px;
+                }
+
+                >p {
+                    color: $Error;
+                    font-weight: 700;
+                    font-size: 18px;
+                    letter-spacing: 0.2em;
+                }
+            }
+
+            //申請填寫內容
+            .formContent {
+                .formItems {
+                    @media (max-width: 767px) {
+                        padding: 0 15px;
+                    }
+
+                    label {
+                        text-align: right;
+
+                        /* 手機版 */
+                        @media (max-width: 767px) {
+                            text-align: left;
+                        }
+
+                        color: $TitleYellow;
+                        font-weight: 700;
+                        line-height: 38px;
+
+                        &.tn4,
+                        &.tn3,
+                        &.tn2 {
+                            letter-spacing: 1em;
+                        }
+
+                        &.tn5 {
+                            letter-spacing: .5em;
+                        }
+
+                        &.need {
+                            letter-spacing: 4px;
+                            line-height: 24px;
+                        }
+                    }
+
+
+                }
+
+                .bbLine {
+                    border-bottom: 1px solid $Gray;
+                }
+
+                .inputRemind {
+                    color: $Error;
+                    font-size: 14px;
+                    line-height: 14px;
+                }
+
+                input {
+                    &::placeholder {
+                        font-size: 14px;
+                        line-height: 14px;
+                        color: $Gray-2;
+                        letter-spacing: .2em;
+                    }
+                }
+
+                // 已顯示選項
+                .optionsLabel {
+                    color: $Black;
+                    letter-spacing: .1em;
+                    font-weight: normal;
+                    font-size: 14px;
+                }
+
+                .creationDateBox {
+                    .form-check-label {
+                        margin-right: 0;
+
+                        input[type="radio"] {
+                            font-size: 16px;
+                            margin-top: 10px;
+                            margin-right: 5px;
+                        }
+
+                        #creationDateInput {
+                            font-size: 16px;
+                            line-height: 35px;
+                            border: 1px dotted $Gray;
+                            border-radius: 3px;
+                            outline: none;
+                            text-align: center;
+                            letter-spacing: .2em;
+                        }
+                    }
+                }
+
+                #helpItems {
+                    padding: 3px;
+                    resize: none;
+                    height: 80px;
+                }
+
+                .lastItem {
+                    label {
+                        line-height: 16px;
+                    }
+                }
+
+                // ==上傳==
+                .upLoadBox {
+                    border: 1px solid $Gray;
+
+                    .upLoadTitle {
+                        font-weight: 700;
+                        letter-spacing: 8px;
+                        font-size: 18px;
+                        color: #d63900;
+                    }
+
+                    label {
+                        color: $Black;
+                        margin-bottom: 0;
+                        letter-spacing: 2px;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $TitleGreen;
+                        }
+                    }
+
+                    input[type="file"] {
+                        display: none;
+                    }
+
+                    .fileInfo {
+                        color: $Gray;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

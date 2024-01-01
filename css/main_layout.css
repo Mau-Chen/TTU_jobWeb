@@ -1,0 +1,136 @@
+/* CSS Document */
+body{
+	/* font-family:Microsoft JhengHei,Arial,sans-serif;
+	font-size: 18px;
+	color: #333;
+	padding-top: 60px; */
+}
+h1 {
+	/* font-size: 1.6em;
+	line-height: 2em;
+	color: #4F804D;
+	text-align: center;
+	padding: 0;
+	margin: 0; */
+}
+
+/* 手機版 */
+@media (max-width: 767px) {
+	body{
+		/* padding-top: 100px; */
+	}
+}
+
+/*-- Navbar --------------------------------------*/
+.navbar {
+    /* border: none;
+    box-shadow: 1px 1px 2px #ccc; */
+}
+.Title {
+    /* background-color: #D6DDD2; */
+}
+.navbar-brand {
+	/* color: #333;
+	font-size: 1.2em;
+	font-weight: bolder;
+	line-height: 2.4em;
+	letter-spacing: 0.08em;
+	background: url("../img/ttulogo.png") no-repeat left 9px;
+	padding-left: 50px;
+    float: none; */
+}
+.navbar-brand span {
+	/* color: #0B6D61; */
+}
+.User {
+	/* margin-top: 9px;
+	float: right; */
+}
+
+/*-- 職缺一覽表表格 --*/
+.Jobs table {
+	border: 1px solid #CCB67A;
+}
+.Jobs table thead tr th {
+	color: #CCB67A;
+	font-size: 1em;
+	text-align: center;
+}
+
+.Jobs table tbody tr td {
+	color: #333;
+	text-align: center;
+}
+.Jobs table tbody tr td.text-right {
+	text-align: right;
+}
+
+select {
+	padding: 5px;
+}
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.myInput > input.form-control {
+	display: inline-block;
+	width: auto;
+}
+
+
+/*-- 廠商職缺公告 --*/
+.tab-pane {
+	padding-top: 20px;
+}
+.nav-tabs li a {
+	color: #4F804D;
+}
+.nav-tabs li.active a:focus {
+	color: #fff;
+	background-color: #CCB67A;
+}
+ 
+/*-- Footer --------------------------------------*/
+.footer {
+	font-size: 0.8em;
+    background-color: #4F804D;
+}
+.footer .container {
+ 	padding: 15px;
+}
+.footer p {
+	color: #fff;
+	line-height: 1em;
+	letter-spacing: 0.1em;
+}
+
+/*-- 燈箱 --------------------------------------*/
+.modal-header h2 {
+	font-size: 1.6em;
+	line-height: 2em;
+	color: #4F804D;
+	text-align: center;
+}
+.myJob th {
+	color: #CCB67A;
+	width: 5em;
+	padding: 0 10px;
+}
+/*-- toTop按鈕 ------------------------------*/
+.toTop {
+	width:45px;
+	height:45px;
+	font-size: 32px;
+	line-height: 1.2em;
+    background-color: #8CCB9B;
+	color:#FFF;
+	border-radius: 50%;
+	box-shadow: 1px 1px 3px #333;
+	-webkit-box-shadow: 1px 1px 3px #333;
+	cursor:pointer;
+	text-align:center;
+	position:fixed;
+	right:15px;
+	bottom:30px;
+	display:none;
+}

@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./img/favicon.ico" rel="shortcut icon" />
+    <title>新大同大學校內育成媒合平台</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- Font-awesome -->
+    <!-- <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="css/login_style.css"> -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+
+        <div class="container login">
+            <div class="row justify-content-center">
+                <h1 class="webtitle mt-5 mb-0">大同大學校內育成媒合平台</h1>
+                <h2>使用者登入</h2>
+
+                <div class="form-horizontal formBox row justify-content-center">
+
+                    <div class="form-horizontal formBox row justify-content-center mb-4">
+                        <label for="formGroupInputLarge" class="col-auto col-form-label">帳號</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-horizontal formBox row justify-content-center mb-4">
+                        <label for="formGroupInputLarge" class="col-auto col-form-label">密碼</label>
+                        <div class="col-sm-7">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+
+                    <div class="form-group form-group-lg text-center justify-content-center submitBtn">
+                        <button type="submit" class="btn btn-lg btn-success">登入</button>
+                    </div>
+                </div>
+
+                <div class="row createAccount mt-5 justify-content-center mb-4">
+                    <a class="col-auto text-decoration-underline" data-bs-toggle="modal"
+                        data-bs-target="#newAccount">沒有帳號，申請進駐！</a>
+                </div>
+                <p class="Footer">系統建置單位：大同大學研究發展處<br />系統開發單位：大同大學創新設計與系統整合研究中心<br />建議使用：IE9.0以上版本或Google
+                    Chrome瀏覽器<br />(最佳螢幕解析1024*768)</p>
+            </div>
+        </div>
+
+    </form>
+
+
+    <!-- 燈箱 ============================================================================ -->
+    <div class="modal fade modal-lg" id="newAccount" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="newAccountLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content rounded-5 p-0">
+                <div class="modal-header row px-5 py-4">
+                    <h2 class="mx-auto col text-center mb-0 pt-3">進駐申請</h2>
+                    <button type="button" class="btn-close  rounded-circle col-auto" aria-label="Close"
+                        data-bs-dismiss="modal"><i class="bi bi-x"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid m-0">
+                        <div class="row remind mb-3 justify-content-center">
+                            <p class="col px-5 mb-1">線上申請 需上傳下列已完成之掃描文件：</p>
+                            <div class="col-12 row justify-content-start text-start px-5">
+                                <p class="col-12 m-1 p-0">公司登記證、營利事業登記證或預查名稱表影本、</p>
+                                <p class="col-auto m-1 p-0">
+                                    <a href="./File_download/F-A1410-002大同大學創新育成中心企業同意審查聲明書.odt"
+                                        class="text-decoration-none">
+                                        同意審查聲明書
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                    </a>、
+                                </p>
+                                <p class="col-auto m-1 p-0">
+                                    <a href="./File_download/F-A1410-003大同大學創新育成中心企業進駐申請書.odt"
+                                        class="text-decoration-none">
+                                        創新育成中心進駐申請書
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                        </svg>
+                                    </a>、
+                                </p>
+                                <p class="col-auto m-1 p-0">
+                                    <a href="./File_download/F-A1410-004大同大學創新育成中心企業申請進駐營運計畫書.odt"
+                                        class="text-decoration-none">
+                                        企業營運計畫構想書<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                    </a>、
+                                </p>
+                                <p class="col-auto m-1 p-0">
+                                    <a href="./File_download/F-A1410-005大同大學創新育成中心企業與教職員合作備忘錄.odt"
+                                        class="text-decoration-none">
+                                        企業與大同大學教職員簽訂之合作備忘錄<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
+                                            <path
+                                                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                            <path
+                                                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                        </svg>
+                                    </a>、
+                                </p>
+                                <p class="col-auto m-1 p-0">進駐審查費繳費證明。</p>
+                            </div>
+                        </div>
+
+                        <table class="table table-borderless  align-middle">
+                            <!-- <thead>
+                                <tr>
+                                
+                                </tr>
+                            </thead> -->
+                            <tbody>
+                                <tr>
+                                    <td></td>
+                                    公司名稱：
+                                </tr>
+                                <tr>
+                                    <input type="text" class="form-control-plaintext" id="companyName" placeholder="設立登記名稱">
+                                </tr>
+                                <tr>
+                                    <td>...</td>
+                                    <td>...</td>
+                                    <td class="align-top">This cell is aligned to the top.</td>
+                                    <td>...</td>
+                                </tr>
+                            </tbody>
+
+
+
+
+
+
+
+                        </table>
+
+
+                        <!-- <form action="" class="formContent pe-1">
+                            <div class="mb-1 row align-items-center formItems">
+                                <label for="companyName" class="col-form-label col-lg-3 px-0 tn4">公司名稱：</label>
+                                <div class="col-lg-9 bbLine">
+                                    <input type="text" class="form-control-plaintext col px-2" id="companyName"
+                                        placeholder="設立登記名稱">
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center creationDateBox formItems">
+                                <label for="creationDate" class="col-form-label col-lg-3 px-0 tn4">成立日期：</label>
+                                <div class="col-lg-9 row bbLine m-0">
+                                    <div class="form-check-inline col-lg-6 col-sm-auto creationDateBox me-5">
+                                        <label class="form-check-label" for="creationDate">
+                                            <input class="form-check-input" type="radio" name="creationDate"
+                                                id="creationDate" onchange="toggleDateInput()" checked>
+                                            <input type="date" id="creationDateInput">
+                                        </label>
+                                    </div>
+                                    <div class="form-check-inline col col-sm-auto">
+                                        <label class="form-check-label optionsLabel" for="creationDateYet">
+                                            <input class="form-check-input" type="radio" name="creationDate"
+                                                id="creationDateYet" onchange="toggleDateInput()">
+                                            辦理公司登記中
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center formItems">
+                                <label for="capitalAmount" class="col-form-label col-lg-3 px-0 tn3">資本額：</label>
+                                <input type="text" class="form-control-plaintext col bbLine col-xs-12" id="capitalAmount">
+                                <div class="col-lg-6 col-sm-12 row">
+                                    <label for="uniformNum" class="col-6 col-form-labe creationTitle pe-0 tn4">統一編號：</label>
+                                    <input type="text" class="form-control-plaintext col bbLine" id="uniformNum">
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center formItems">
+                                <div class="col row">
+                                    <label for="responsiblePerson" class="col-form-labe col-lg-6 tn3 px-0">負責人：</label>
+                                    <input type="text" class="col form-control-plaintext bbLine" id="responsiblePerson">
+                                </div>
+
+                                <div class="col-4 row px-0">
+                                    <label for="majorShareholder"
+                                        class="col-lg-6 col-form-labe align-self-center px-0">主要股東：</label>
+                                    <input type="text" class="col form-control-plaintext bbLine" id="majorShareholder">
+                                </div>
+
+                                <div class="col-4 row">
+                                    <label for="employeesNum"
+                                        class="col-lg-6 col-form-labe align-self-center px-0">員工人數：</label>
+                                    <input type="text" class="col form-control-plaintext bbLine" id="employeesNum">
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center formItems">
+                                <label for="companyAdd" class="col-form-label col-lg-3 px-0 tn4">登記地址：</label>
+                                <div class="col-lg-9 bbLine">
+                                    <input type="text" class="form-control-plaintext col px-2" id="companyAdd"
+                                        placeholder="設立登記地址">
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center locationOfCompanyBox formItems">
+                                <label for="locationOfCompany" class="col-form-label col-lg-3 px-0 tn4">通訊地址：</label>
+                                <div class="col-lg-9 bbLine row align-items-center">
+                                    <div class="col-2 form-check form-check-inline checkSame pe-0 me-0">
+                                        <input class="form-check-input p-0" type="checkbox" id="sameAdd">
+                                        <label class="form-check-label optionsLabel" for="sameAdd">同上：</label>
+                                    </div>
+                                    <input type="text" class="form-control-plaintext px-0 col" id="locationOfCompany">
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center formItems">
+                                <div class="col row">
+                                    <label for="contactPerson" class="col-form-labe col-lg-6 tn3 px-0">聯絡人：</label>
+                                    <input type="text" class="col form-control-plaintext bbLine" id="contactPerson">
+                                </div>
+
+                                <div class="col-4 row px-0">
+                                    <label for="jobTitle" class="col-lg-6 col-form-labe align-self-center px-0 tn2">職稱：</label>
+                                    <input type="text" class="col form-control-plaintext bbLine" id="jobTitle">
+                                </div>
+
+                                <div class="col-4 row">
+                                    <label for="ext"
+                                        class="col-lg-6 col-form-labe align-self-center tn2 px-0">分機：</label>
+                                    <input type="text" class="col form-control-plaintext bbLine" id="ext">
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center formItems">
+                                <label for="faxNum" class="col-form-label col-lg-3 px-0 tn3">傳真：</label>
+                                <input type="text" class="form-control-plaintext col bbLine" id="faxNum">
+                                <div class="col-auto row">
+                                    <label for="phoneNum" class="col-auto col-form-labe creationTitle pe-0">電話：</label>
+                                    <div class="col-auto bbLine">
+                                        <input type="text" class="form-control-plaintext" id="phoneNum">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center formItems">
+                                <label for="email" class="col-form-label col-lg-3 px-0 tn5">E-mail：</label>
+                                <div class="col-sm-9 bbLine">
+                                    <input type="text" class="form-control-plaintext col-auto px-2" id="email"
+                                        placeholder="abc@example.com">
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center formItems">
+                                <label for="businessItems" class="col-form-label col-lg-3 px-0 tn5">主要營業項目：</label>
+                                <div class="col-lg-9 bbLine">
+                                    <input type="text" class="form-control-plaintext col-auto px-2" id="businessItems"
+                                        placeholder="請簡述">
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row formItems">
+                                <label for="helpItems"
+                                    class="col-form-label col-lg-3 px-0 need">駐育成中心&nbsp;&nbsp;<br>主要輔導項目需求：</label>
+                                <div class="col-sm-9">
+                                    <textarea class="form-control" rows="8" id="helpItems"></textarea>
+                                    <p class="text-end inputRemind">※技術、行銷、財務或商務支援等，請簡要敘述。</p>
+                                </div>
+                            </div>
+
+                            <div class="mb-1 row align-items-center justify-content-evenly lastItem formItems">
+                                <div class="col-lg-6 row mb-5">
+                                    <label for="createId" class="col-form-label col-auto px-0">創建帳號：</label>
+                                    <input type="text" class="form-control-plaintext col-auto bbLine px-5" id="createId">
+                                    <p class="col-auto text-end inputRemind mb-0">※僅接受小寫字母、數字與下底線的組合。</p>
+                                </div>
+
+                                <div class="col-lg-6 row mb-5">
+                                    <label for="referrer" class="col-auto col-form-labe creationTitle px-0">推薦人：</label>
+                                    <input type="text" class="form-control-plaintext col-auto bbLine px-5" id="referrer">
+                                </div>
+                            </div> -->
+
+                        <!-- ==上傳區域== -->
+                        <!-- <div class="upLoadBox mt-3 rounded-5 p-4">
+                                <p class="upLoadTitle mb-1">檔案上傳：</p>
+                                <div class="row justify-content-start">
+                                    <div class="col-auto">
+                                        <label for="companyProof" class="form-label">公司登記證<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-upload ms-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                                <path
+                                                    d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                            </svg></label>
+                                        <input class="form-control" type="file" id="companyProof"
+                                            onchange="javascript:{document.getElementById('fileInfo1').innerHTML = document.getElementById('companyProof').value}">
+                                        <div id="fileInfo1" class="fileInfo"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="businessProof" class="form-label">營利事業登記證或預查名稱表影本<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-upload ms-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                                <path
+                                                    d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                            </svg></label>
+                                        <input class="form-control" type="file" id="businessProof"
+                                            onchange="javascript:{document.getElementById('fileInfo2').innerHTML = document.getElementById('businessProof').value}">
+                                        <div id="fileInfo2" class="fileInfo"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="consentDoc" class="form-label">同意審查聲明書<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-upload ms-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                                <path
+                                                    d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                            </svg></label>
+                                        <input class="form-control" type="file" id="consentDoc"
+                                            onchange="javascript:{document.getElementById('fileInfo3').innerHTML = document.getElementById('consentDoc').value}">
+                                        <div id="fileInfo3" class="fileInfo"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="entryForm" class="form-label">創新育成中心進駐申請書<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-upload ms-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                                <path
+                                                    d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                            </svg></label>
+                                        <input class="form-control" type="file" id="entryForm"
+                                            onchange="javascript:{document.getElementById('fileInfo4').innerHTML = document.getElementById('entryForm').value}">
+                                        <div id="fileInfo4" class="fileInfo"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="planUpload" class="form-label">企業營運計畫構想書<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-upload ms-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                                <path
+                                                    d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                            </svg></label>
+                                        <input class="form-control" type="file" id="planUpload"
+                                            onchange="javascript:{document.getElementById('fileInfo5').innerHTML = document.getElementById('planUpload').value}">
+                                        <div id="fileInfo5" class="fileInfo"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="memoUpload" class="form-label">企業與大同大學教職員簽訂之合作備忘錄<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-upload ms-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                                <path
+                                                    d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                            </svg></label>
+                                        <input class="form-control" type="file" id="memoUpload"
+                                            onchange="javascript:{document.getElementById('fileInfo6').innerHTML = document.getElementById('memoUpload').value}">
+                                        <div id="fileInfo6" class="fileInfo"></div>
+                                    </div>
+                                    <div class="col-auto">
+                                        <label for="payProof" class="form-label">進駐審查費繳費證明<svg
+                                                xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                fill="currentColor" class="bi bi-upload ms-1" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                                                <path
+                                                    d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+                                            </svg></label>
+                                        <input class="form-control" type="file" id="payProof"
+                                            onchange="javascript:{document.getElementById('fileInfo7').innerHTML = document.getElementById('payProof').value}">
+                                        <div id="fileInfo7" class="fileInfo"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form> -->
+                    </div>
+                </div>
+
+                <div class="modal-footer submitBtn">
+                    <button class="btn btn-outline-success" data-bs-dismiss="modal" type="submit"
+                        value="Submit">確定送出</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- jQuery -->
+    <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap JS -->
+    <!-- <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
+    <script src="./assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <!-- My JS -->
+    <script src="js/my.js"></script>
+
+    <!-- 增加手機上的滑動功能 -->
+    <script src="assets/bootstrap-3.3.7-dist/js/jqm-even-touch/jquery.mobile.custom.min.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/js/carousel_swipe.js"></script>
+
+
+</body>
+
+</html>

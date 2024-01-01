@@ -1,0 +1,231 @@
+/* ----- ALL ----- */
+body {
+    /* font-family: Arial, Helvetica, "微軟正黑體", sans-serif; */
+    /* letter-spacing: 0.1em; */
+    /* font-size: 16px; */
+    /* color: #000; */
+    /* color: var(--Black-color); */
+    /* background: #D6DDD2 url("../img/bg.png") left top repeat; */
+    /* --TitleGreen-color: #5F755E;
+    --Gray-color: #999;
+    --Black-color: #333;
+    --TitleYellow-color: #D3BD84;
+    --Error-color: #D63900; */
+
+}
+
+.container {
+    /* width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding-top: 100px;
+    margin-top: 160px;
+    position: relative; */
+}
+
+h1.webtitle {
+    /* display: block;
+    width: 337px;
+    height: 95px;
+    text-indent: -9999px;
+    background: transparent url("../img/logo.png") left top no-repeat;
+    margin: 0;
+    margin-left: -168px;
+    position: absolute;
+    top: 15px;
+    left: 50%; */
+}
+
+h2 {
+    /* color: #333;
+    font-size: 1.4em;
+    line-height: 2.5em;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0; */
+}
+
+.form-group {
+    /* padding: 8px 15px; */
+}
+
+/* Footer ---------------------*/
+.Footer {
+    /* color: #666;
+    font-size: 0.8em;
+    line-height: 1.8em;
+    text-align: left;
+    margin-top: 30px; */
+}
+
+.clear {
+    /* clear: both; */
+}
+
+/* ======修改====== */
+/* **調整間距 */
+#form1 .form-horizontal.formBox {
+    /* margin-top: 20px; */
+}
+
+#form1 .form-horizontal.formBox .form-group {
+    /* margin-bottom: 27px; */
+}
+
+/* **登入按鈕改色 */
+.btn.btn-lg.btn-success {
+    /* background-color: var(--TitleGreen-color);
+    border: var(--TitleGreen-color);
+    font-weight: 700; */
+}
+
+.btn.btn-lg.btn-success:hover {
+    /* background-color: var(--TitleYellow-color); */
+}
+
+/* **申請新帳號 */
+.createAccount {
+    /* padding-top: 35px; */
+
+}
+
+.createAccount>a {
+    /* display: block;
+    color: var(--TitleGreen-color);
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer; */
+}
+
+
+
+
+/* ===新增申請燈箱=== */
+
+#newAccount .modal-content {
+    /* border-radius: 30px;
+    padding: 35px; */
+}
+
+#newAccount .modal-header {
+    /* border: none; */
+}
+
+/* **右上關閉 */
+#newAccount .modal-header .close {
+    /* width: 32px;
+    height: 32px;
+    font-size: 32px;
+    border: 2px solid var(--Gray-color);
+    border-radius: 50%;
+    line-height: 0px; */
+}
+
+#newAccount .modal-header .modal-title {
+    /* color: var(--TitleGreen-color);
+    font-size: 36px;
+    letter-spacing: 18px; */
+}
+
+/* ==上方提示字== */
+#newAccount .remind {
+    /* margin: 0 auto 20px;
+    color: var(--Black-color);
+    /* width: 600px; */
+    /* width: 90%;
+    text-align: center; */ 
+}
+
+#newAccount .remind p:nth-child(n+3) {
+    /* display: inline-block; */
+}
+
+#newAccount .remind p:first-child {
+    /* color: var(--Error-color); */
+    /* text-align: left;
+    font-weight: 700; */
+
+}
+
+/* ==表單== */
+#newAccount .creationTitle {
+    /* color: var(--TitleYellow-color);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 8px; */
+}
+
+#newAccount .checkbox-inline.col-md-1 {
+    /* padding-right: 0; */
+}
+
+#newAccount .form-group div:has(input),
+#newAccount .form-group div:has(textarea) {
+    /* padding: 0; */
+
+}
+
+/* **多字欄目改字距 */
+#newAccount .creationTitle.need {
+    /* letter-spacing: 4.8px; */
+}
+
+#newAccount textarea {
+    /* resize: none; */
+}
+
+#newAccount .modal-body>form input[type="date"] {
+    /* border: 1px solid #ccc;
+    /* outline: 1px solid var(--Gray-color); */
+    /* border-radius: 4px; */ */
+}
+
+/* **欄位提示字 */
+#newAccount .help-block {
+    /* color: var(--Error-color);
+    text-align: end;
+    font-size: 14px; */
+}
+
+/* ==上傳區域== */
+#newAccount .upLoadBox {
+    /* border: 1px solid var(--Black-color);
+    border-radius: 30px;
+    padding: 24px 15px;
+    margin: 0 auto; */
+}
+
+/* **上傳功能改樣式 */
+#newAccount input[type="file"] {
+    /* display: none; */
+
+}
+
+#newAccount .upLoadBox>span {
+    /* display: block;
+    font-weight: 700;
+    letter-spacing: 8px;
+    margin-bottom: 21px; */
+}
+
+#newAccount .upLoadBox>label {
+    /* padding: 0;
+    text-align: center;
+    cursor: pointer; */
+}
+
+/* **選定檔案顯示檔案路徑 */
+#newAccount .upLoadBox>label .fileInfo {
+    /* font-size: 12px;
+    font-weight: normal;
+    color: var(--Gray-color);
+    line-height: 14px; */
+}
+
+#newAccount .modal-footer .btn-default {
+    /* margin-left: auto;
+    margin-right: auto; */
+}

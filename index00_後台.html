@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>大同大學校內育成媒合平台</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- My CSS -->
+	<link rel="stylesheet" href="css/main_layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+
+<body>
+<!-- Nav選單 ========================================================================================= -->
+	<nav class="navbar navbar-fixed-top" role="navigation">
+
+		<div class="Title">
+			<div class="container">
+				<a class="navbar-brand" href="javascript:;">大同大學<span>校內育成媒合平台</span></a>
+				<!-- 個人登入狀態 -->
+				<div class="User">
+					<div class="btn-group">
+						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OO股份有限公司，您好
+						<span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="javascript:;"><i class="fa fa-sign-out"></i> 登出</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 職缺登錄 ========================================================================================= -->
+	<div class="Content">
+		<div class="container">
+			<div class="row">
+				<h1>職缺登錄</h1>
+				<div class="col-sm-4 table-responsive">
+                    <table class="table Mytable">
+                        <tbody>
+                            <tr>
+                                <td><label class="control-label">職務名稱：</label></td>
+                                <td><input class="form-control" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label">工作性質：</label></td>
+                                <td>
+									<select class="form-control">
+									  <option>全職</option>
+									  <option>工讀</option>
+									</select>
+								</td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label">工作內容：</label></td>
+                                <td><textarea class="form-control" rows="3"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label">工作地點：</label></td>
+                                <td><input class="form-control" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label">科系限制：</label></td>
+                                <td>
+                                    <select class="form-control">
+                                      <option>無</option>
+                                      <option>電子</option>
+                                      <option>機械</option>
+                                      <option>化工</option>
+                                      <option>會計</option>
+                                      <option>資管</option>
+                                      <option>工業設計</option>
+                                      <option>語文</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-4 table-responsive">
+                    <table class="table Mytable">
+                            <tbody>
+                            <tr>
+                                <td rowspan="2"><label class="control-label">工作時間：</label></td>
+                                <td class="myInput">
+                            		<div class="input-group">
+                                        <div class="input-group-addon">自</div>
+                                        <select class="form-control">
+                                          <option>07時</option>
+                                          <option>08時</option>
+                                          <option>09時</option>
+                                          <option>10時</option>
+                                          <option>11時</option>
+                                          <option>12時</option>
+                                          <option>12</option>
+                                        </select>
+                                        <select class="form-control">
+                                          <option>7分</option>
+                                          <option>8分</option>
+                                          <option>9分</option>
+                                          <option>10分</option>
+                                          <option>11分</option>
+                                          <option>12分</option>
+                                          <option>12分</option>
+                                        </select>
+                                        <div class="input-group-addon">起</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="myInput">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">至</div>
+                                        <select class="form-control">
+                                          <option>07時</option>
+                                          <option>08時</option>
+                                          <option>09時</option>
+                                          <option>10時</option>
+                                          <option>11時</option>
+                                          <option>12時</option>
+                                          <option>12</option>
+                                        </select>
+                                        <select class="form-control">
+                                          <option>7分</option>
+                                          <option>8分</option>
+                                          <option>9分</option>
+                                          <option>10分</option>
+                                          <option>11分</option>
+                                          <option>12分</option>
+                                          <option>12分</option>
+                                        </select>
+                                        <div class="input-group-addon">止</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label">休假制度：</label></td>
+                                <td>
+									<select class="form-control">
+									  <option>周休二日</option>
+									  <option>排假</option>
+									  <option>其它</option>
+									</select>
+								</td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label">附加條件：</label></td>
+                                <td><textarea class="form-control" rows="3"></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label">應徵方式：</label></td>
+                                <td><textarea class="form-control" rows="3"></textarea></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-sm-4 table-responsive">
+                    <table class="table Mytable">
+                        <tbody>
+                            <tr>
+                                <td><label class="control-label">工作待遇：</label></td>
+                                <td class="myInput">
+                                    <select class="form-control">
+                                      <option>月薪</option>
+                                      <option>日薪</option>
+                                      <option>時薪</option>
+                                      <option>按件計酬</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <!-- 月薪 ----------------------------->
+                                    <div class="radio">
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <div class="input-group-addon">元至</div>
+                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <div class="input-group-addon">元</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="radio">
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <div class="input-group-addon">元</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="radio">
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <div class="input-group-addon">元以上</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="radio">
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                                                <div class="input-group">
+                                                    <div class="input-group-addon">面議</div>
+                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <div class="input-group-addon">元以上</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <!-- 日薪&時薪 ----------------------------->
+                                    <!-- <div class="radio">
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <div class="input-group-addon">元</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div> -->
+
+                                    <!-- 按件計酬 ----------------------------->
+                                    <!-- <div class="radio">
+                                        <div class="form-group">
+                                            <label>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <div class="input-group-addon">元 / 件</div>
+                                                </div>
+                                            </label>
+                                        </div>
+                                    </div> -->
+
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label class="control-label">下架日期：</label></td>
+                                <td><input name="" type="date" value="" id="" class="form-control"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="col-sm-12 text-center">
+		    		<button type="button" class="btn btn-lg btn-danger">重填</button>&nbsp;
+		    		<button type="button" class="btn btn-lg btn-success">送出資料</button>
+                </div>
+
+
+			</div><!-- row -->
+		</div><!-- container -->
+	</div><!-- Content -->
+
+
+
+
+
+
+ 	<hr/><!-- 我是一條線 -->
+
+
+
+
+
+<!-- 已登錄職缺 ===================================================================-->
+	<div class="Jobs mb30">
+		<div class="container">
+			<div class="row">
+            	<h1>已登錄職缺 <button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> 刪除</button></h1>
+            	
+                <div class="col-sm-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>選取</th>
+                                <th>上架日期</th>
+                                <th>職務名稱</th>
+                                <th>工作性質</th>
+                                <th>工作時間</th>
+                                <th>下架日期</th>
+                                <th>詳細內容</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><label><input type="checkbox"></label></td>
+                                <td>2022/10/20</td>
+                                <td>平面設計助理</td>
+                                <td>工讀</td>
+                                <td>日班</td>
+                                <td>2022/11/30</td>
+                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><label><input type="checkbox"></label></td>
+                                <td>2022/10/20</td>
+                                <td>平面設計助理</td>
+                                <td>工讀</td>
+                                <td>日班</td>
+                                <td>2022/11/30</td>
+                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><label><input type="checkbox"></label></td>
+                                <td>2022/10/20</td>
+                                <td>平面設計助理</td>
+                                <td>工讀</td>
+                                <td>日班</td>
+                                <td>2022/11/30</td>
+                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><label><input type="checkbox"></label></td>
+                                <td>2022/10/20</td>
+                                <td>平面設計助理</td>
+                                <td>工讀</td>
+                                <td>日班</td>
+                                <td>2022/11/30</td>
+                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
+                            </tr>
+                            <tr>
+                                <td><label><input type="checkbox"></label></td>
+                                <td>2022/10/20</td>
+                                <td>平面設計助理</td>
+                                <td>工讀</td>
+                                <td>日班</td>
+                                <td>2022/11/30</td>
+                                <td><a class="btn btn-default" href="javascript:;" role="button"><i class="fa fa-search"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </div><!-- .Content -->
+
+
+
+
+
+
+
+
+<!-- Footer ============================================================================ -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12">
+                    <p>大同大學 版權所有©2022 All Rights Reserved.</p>
+                    <p>建議使用：IE9.0以上版本或Google Chrome瀏覽器 (最佳螢幕解析1280*1024)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+	<!-- toTOP按鈕 -->
+	<div class="toTop"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+
+
+
+
+
+
+
+<!-- 燈箱 ============================================================================ -->
+	<div class="modal fade" id="myModal" tabindex="-1">
+		<div class="modal-dialog modal-lg">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h2 class="modal-title">職缺內容</h2>
+				</div>
+				<div class="modal-body">
+                    <table class="table table-striped myJob">
+                        <tbody>
+                            <tr>
+                                <th>公司名稱</th>
+                                <td colspan="5">包山包海工程股份有限公司</td>
+                            </tr>
+                            <tr>
+                                <th>公司簡介</th>
+                                <td colspan="5">低價經濟增強某些晶片節目好像商標上網生成，只見適當當前位置團體玄幻簽名，連載一點國產等待除了壓縮網通創新採，太陽加油正好聯繫附近配合衝，同樣地上臨床原理有一自治區之處簡直三大生物權益適應判斷，直到尤其是內存的確取得因此戰略此處黑色當然正文監控面，這樣選擇她說外貿性格你看體會笑着分別多媒體，生成版本控制一生當前唱片身子處罰發，存在要在引導手機主頁一年總經理報紙是什麼意識觀察榮譽照片打電，大人一對你。</td>
+                            </tr>
+                            <tr>
+                                <th>職務名稱</th>
+                                <td>平面設計助理</td>
+                                <th>工作性質</th>
+                                <td>全職</td>
+                                <th>科系限制</th>
+                                <td>園藝相關科系</td>
+                            </tr>
+                            <tr>
+                                <th>工作時間</th>
+                                <td>09:00~10:00</td>
+                                <th>休假制度</th>
+                                <td>周休6日</td>
+                                <th>工作待遇</th>
+                                <td>自己開價</td>
+                            </tr>
+                            <tr>
+                                <th>工作內容</th>
+                                <td colspan="5">澆花、餵魚</td>
+                            </tr>
+                            <tr>
+                                <th>附加條件</th>
+                                <td colspan="5">會吃苦耐勞、忍氣吞聲</td>
+                            </tr>
+                            <tr>
+                                <th>應徵方式</th>
+                                <td colspan="5">手寫履歷表傳真至02-25957646</td>
+                            </tr>
+                            <tr>
+                                <th>工作地點</th>
+                                <td colspan="3">老闆家</td>
+                                <th>下架日期</th>
+                                <td>2022/11/30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<!-- jQuery -->
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<!-- Bootstrap JS -->
+	<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<!-- My JS -->
+	<script src="js/my.js"></script>
+
+	<!-- 增加手機上的滑動功能 -->
+	<script src="assets/bootstrap-3.3.7-dist/js/jqm-even-touch/jquery.mobile.custom.min.js"></script>
+	<script src="assets/bootstrap-3.3.7-dist/js/carousel_swipe.js"></script>
+
+
+
+</body>
+</html>

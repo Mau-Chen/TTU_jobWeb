@@ -1,0 +1,107 @@
+@charset "UTF-8";
+/*-- Navbar --------------------------------------*/
+.navbar {
+  border: none;
+  box-shadow: 1px 3px 10px #CCC;
+  background-color: #D6DDD2;
+}
+.navbar a {
+  font-weight: 700;
+  color: #0B6D61;
+}
+.navbar a.navbar-brand {
+  font-size: 1.2em;
+  line-height: 2.4em;
+  letter-spacing: 0.08em;
+  padding-left: 50px;
+  background: url("../img/ttulogo.png") no-repeat left 9px;
+}
+.navbar a:hover {
+  color: #5F755E;
+}
+.navbar a span {
+  color: #333;
+}
+
+/*--all container--------------------------------------*/
+.allWrapper {
+  padding-top: 90px;
+}
+
+/*-- Footer --------------------------------------*/
+.footer {
+  font-size: 0.8em;
+  background-color: #5F755E;
+}
+.footer p {
+  color: #fff;
+  line-height: 1em;
+  letter-spacing: 0.1em;
+}
+
+body {
+  font-family: Microsoft JhengHei, Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+}
+
+h1 {
+  font-size: 1.6em;
+  line-height: 2em;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+/* 手機版 */
+/*-- index --------------------------------------*/
+.container h3 {
+  font-weight: 700;
+}
+.container h5 {
+  font-weight: 700;
+  color: #999;
+}
+.container .wrapperLeft h5 {
+  color: #D63900;
+}
+.container .wrapperLeft table {
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .container .wrapperLeft table {
+    font-size: 14px;
+  }
+}
+.container .wrapperLeft table thead th {
+  letter-spacing: 0.1em;
+}
+.container .wrapperLeft table thead th:first-child {
+  letter-spacing: 1.5em;
+}
+.container .wrapperRight .entranceItems {
+  height: 120px;
+  width: 120px;
+  padding: 30px 20px;
+  background-color: #D6DDD2;
+  text-decoration: none;
+  color: #5F755E;
+}
+.container .wrapperRight .entranceItems:hover {
+  background-color: #D3BD84;
+  color: #333;
+}
+.container .wrapperRight .entranceItems p {
+  margin-bottom: 0;
+  line-height: 32px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.container .wrapperRight .entranceItems p svg {
+  font-weight: 700;
+  width: 32px;
+  height: 32px;
+}
+.container .wrapperRight .entranceItems .parkingLot svg {
+  width: 19px;
+}/*# sourceMappingURL=main_layoutStyle.css.map */

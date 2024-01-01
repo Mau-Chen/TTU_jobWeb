@@ -132,11 +132,16 @@ body {
             }
 
             //申請填寫內容
-            .formContent {
-                .formItems {
+            .table {
+                background-color: bisque;
+                .tableItems {
                     @media (max-width: 767px) {
                         padding: 0 15px;
                     }
+
+                    font-size: 1rem;
+                    background-color: #d63900;
+            
 
                     label {
                         text-align: right;
@@ -167,6 +172,9 @@ body {
                     }
 
 
+                }
+                .inputText{
+                    background-color: aqua;
                 }
 
                 .bbLine {

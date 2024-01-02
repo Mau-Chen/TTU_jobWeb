@@ -2,17 +2,17 @@
 @import "layout";
 
 body {
-    font-family: Microsoft JhengHei, Arial, sans-serif;
-    font-size: 18px;
-    color: $Black;
+    font-family: "Microsoft JhengHei", Arial, "sans-serif";
+    // font-size: 18px;
+    // color: $Black;
 }
 
 h1 {
-    font-size: 1.6em;
-    line-height: 2em;
-    text-align: center;
-    padding: 0;
-    margin: 0;
+    // font-size: 1.6em;
+    // line-height: 2em;
+    // text-align: center;
+    // padding: 0;
+    // margin: 0;
 }
 
 
@@ -30,33 +30,33 @@ h1 {
 
 .container {
     h3 {
-        font-weight: 700;
+        // font-weight: 700;
 
     }
 
     h5 {
-        font-weight: 700;
-        color: $Gray;
+        // font-weight: 700;
+        // color: $Gray;
     }
 
     .wrapperLeft {
         h5 {
-            color: $Error;
+            // color: $Error;
         }
 
         table {
-            font-size: 16px;
+            // font-size: 16px;
 
             @media (max-width: 767px) {
-                font-size: 14px;
+                // font-size: 14px;
             }
 
             thead {
                 th {
-                    letter-spacing: .1em;
+                    // letter-spacing: .1em;
 
                     &:first-child {
-                        letter-spacing: 1.5em;
+                        // letter-spacing: 1.5em;
                     }
                 }
 
@@ -68,35 +68,34 @@ h1 {
 
     .wrapperRight {
         .entranceItems {
-            height: 120px;
-            width: 120px;
-            padding: 30px 20px;
-            background-color: $BackGround;
-            text-decoration: none;
-            color: $TitleGreen;
+            // height: 120px;
+            // width: 120px;
+            // padding: 30px 20px;
+            // background-color: $BackGround;
+            // text-decoration: none;
+            // color: $TitleGreen;
 
             &:hover {
-                background-color: $TitleYellow;
-                color: $Black;
+                // background-color: $TitleYellow;
+                // color: $Black;
             }
 
             p {
-                margin-bottom: 0;
-                line-height: 32px;
-                font-size: 16px;
-                font-weight: 700;
+                // margin-bottom: 0;
+                // line-height: 32px;
+                // font-size: 16px;
+                // font-weight: 700;
 
                 svg {
-                    font-weight: 700;
-                    width: 32px;
-                    height: 32px;
+                    // font-weight: 700;
+                    // width: 32px;
+                    // height: 32px;
                 }
             }
 
             .parkingLot {
                 svg {
-                    width: 19px;
-                    // color: $TitleGreen;
+                    // width: 19px;
                 }
             }
         }

@@ -1,5 +1,19 @@
 @import "color";
 
+h1,
+h2,
+h3,
+h5 {
+    font-weight: 700;
+}
+
+body {
+    font-family: Arial, Helvetica, "Microsoft JhengHei", "sans-serif";
+    font-size: 16px;
+    color: $Black;
+
+}
+
 /*-- Navbar --------------------------------------*/
 .navbar {
     border: none;
@@ -7,20 +21,18 @@
     background-color: $BackGround;
 
     // ==header左邊==
-    a {
+    .navbar-brand {
+        font-size: 1.25em;
         font-weight: 700;
-        color: $SecondGreen;
+        line-height: 2.4em;
+        letter-spacing: .08em;
+        color: $TitleGreen;
 
-        &.navbar-brand {
-            font-size: 1.2em;
-            line-height: 2.4em;
-            letter-spacing: .08em;
-            padding-left: 50px;
-            background: url("../img/ttulogo.png") no-repeat left 9px;
-        }
+        padding-left: 50px;
+        background: url("../img/ttulogo.png") no-repeat left 9px;
 
         &:hover {
-            color: $TitleGreen;
+            color: $SecondGreen;
         }
 
         span {
@@ -38,17 +50,33 @@
         .navbar-toggler {
             font-size: 16px;
         }
+
+        span {
+            color: $Black;
+        }
     }
 
     // ==側邊攔==
     .offcanvas {
         --bs-offcanvas-width: 250px;
         --bs-offcanvas-padding-y: 4rem;
+
+        .nav-link {
+            font-size: 1.25em;
+            font-weight: 700;
+            letter-spacing: .2em;
+            color: $TitleGreen;
+
+            &:hover {
+                color: $SecondGreen;
+            }
+        }
     }
 
 }
 
 /*--all container--------------------------------------*/
+
 .allWrapper {
     padding-top: 90px;
     padding-bottom: 90px;

@@ -1,22 +1,12 @@
-@import "color";
-
-// Bootstrap 5 改變數
-// $headings-font-weight: 700;
-// $headings-line-height: 1.2;
-
+// @import "color";
+@import "layout";
 
 body {
+    background: $BackGround url("../img/bg.png") left top repeat;
+
     footer {
         display: none;
     }
-
-    font-family: Arial,
-    Helvetica,
-    "微軟正黑體",
-    sans-serif;
-    font-size: 16px;
-    color: $Black;
-    background: $BackGround url("../img/bg.png") left top repeat;
 
     .submitBtn {
         button {
@@ -52,7 +42,7 @@ body {
             line-height: 2.5em;
             text-align: center;
             margin: 0;
-            font-weight: 700;
+            // font-weight: 700;
             letter-spacing: 4.8px;
         }
 
@@ -101,7 +91,6 @@ body {
 
     .modal-content {
 
-        // background-color: red;
         .modal-header {
             h2 {
                 color: $TitleGreen;
@@ -140,6 +129,7 @@ body {
                     @media (max-width: 992px) {
                         margin-bottom: 15px;
                     }
+
                     label {
                         letter-spacing: .2rem;
 
@@ -203,7 +193,7 @@ body {
 
                     }
 
-                    
+
                     //自訂-主要輔導項目需求區塊
                     &.need {
                         .labelTitle {

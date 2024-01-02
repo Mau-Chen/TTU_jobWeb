@@ -1,63 +1,42 @@
-@import "color";
+// @import "color";
 @import "layout";
-
-body {
-    font-family: Arial,
-    Helvetica,
-    "微軟正黑體",
-    sans-serif;
-    // font-family: Microsoft JhengHei, Arial, sans-serif;
-    // font-size: 18px;
-    font-size: 16px;
-    color: $Black;
-}
-
-h1 {
-    font-size: 1.6em;
-    line-height: 2em;
-    text-align: center;
-    padding: 0;
-    margin: 0;
-}
 
 
 /* 手機版 */
-@media (max-width: 767px) {
-    body {
-        // padding-top: 100px;
-    }
-}
+@media (max-width: 767px) {}
 
 
 
 
 /*-- index --------------------------------------*/
 
-.container.firmIndex {
-    h3 {
-        font-weight: 700;
+.allWrapper.firmIndex {
+    div {
+        // outline: 1px solid red;
+    }
 
+    h3 {
+        font-size: 2em;
+        letter-spacing: .5em;
     }
 
     h5 {
-        font-weight: 700;
-        color: $Gray;
+        font-size: 1.5em;
+        letter-spacing: .3em;
     }
 
+
     .wrapperLeft {
-        h5 {
+        h5{
             color: $Error;
         }
 
         table {
-            font-size: 16px;
 
-            @media (max-width: 767px) {
-                font-size: 14px;
-            }
 
             thead {
                 th {
+                    font-size: 1.2em;
                     letter-spacing: .1em;
 
                     &:first-child {
@@ -65,14 +44,18 @@ h1 {
                     }
                 }
 
-                tbody {}
+
             }
         }
     }
 
 
     .wrapperRight {
+        h5{
+            color: $Gray;
+        }
         .entranceItems {
+            display: block;
             height: 120px;
             width: 120px;
             padding: 30px 20px;
@@ -82,7 +65,7 @@ h1 {
 
             &:hover {
                 background-color: $TitleYellow;
-                color: $Black;
+                // color: $Black;
             }
 
             p {
@@ -106,5 +89,4 @@ h1 {
             }
         }
     }
-
 }

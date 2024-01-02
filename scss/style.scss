@@ -4,6 +4,7 @@
 // $headings-font-weight: 700;
 // $headings-line-height: 1.2;
 
+
 body {
     footer {
         display: none;
@@ -38,7 +39,7 @@ body {
         margin-top: calc(50vh - 250px);
         border-radius: 50%;
 
-        h1.webtitle {
+        h1.webTitle {
             width: 337px;
             height: 95px;
             text-indent: -9999px;
@@ -110,7 +111,7 @@ body {
         }
 
         .modal-body {
-            overflow-x: hidden;
+            // overflow-x: hidden;
 
             // ==上方提醒
             .remind {
@@ -131,120 +132,118 @@ body {
                 }
             }
 
-            //申請填寫內容
+            //申請書填寫範圍
             .formContent {
                 .formItems {
-                    @media (max-width: 767px) {
-                        padding: 0 15px;
-                    }
+                    margin-bottom: 10px;
 
+                    @media (max-width: 992px) {
+                        margin-bottom: 15px;
+                    }
                     label {
-                        text-align: right;
+                        letter-spacing: .2rem;
 
-                        /* 手機版 */
-                        @media (max-width: 767px) {
-                            text-align: left;
+                        @media (max-width: 992px) {
+                            letter-spacing: .8rem;
                         }
 
-                        color: $TitleYellow;
-                        font-weight: 700;
-                        line-height: 38px;
-
-                        &.tn4,
-                        &.tn3,
-                        &.tn2 {
-                            letter-spacing: 1em;
+                        //自訂-真正的欄位名稱
+                        &.labelTitle {
+                            color: $TitleYellow;
+                            font-weight: 700;
                         }
 
-                        &.tn5 {
-                            letter-spacing: .5em;
+                        // 自訂-已顯示選項(區分非欄位名稱)
+                        &.optionsLabel {
+                            color: $Black;
+                            letter-spacing: normal;
                         }
 
-                        &.need {
-                            letter-spacing: 4px;
-                            line-height: 24px;
+                        &.w80 {
+                            width: 80%;
                         }
                     }
 
+                    //自訂-表示輸入框之用的下底線
+                    .bbLine {
+                        border-bottom: 1px solid $Gray;
 
-                }
+                        //視情況隱藏
+                        &.chooseHide {
+                            @media (max-width: 992px) {
+                                border-bottom: none;
+                            }
+                        }
 
-                .bbLine {
-                    border-bottom: 1px solid $Gray;
-                }
+                    }
 
-                .inputRemind {
-                    color: $Error;
-                    font-size: 14px;
-                    line-height: 14px;
-                }
+                    //視情況增加內距
+                    .form-check {
+                        @media (max-width: 992px) {
+                            padding: 3px 35px;
+                        }
 
-                input {
-                    &::placeholder {
+
+                    }
+
+                    //自訂-警示字
+                    .inputRemind {
+                        color: $Error;
                         font-size: 14px;
-                        line-height: 14px;
-                        color: $Gray-2;
-                        letter-spacing: .2em;
                     }
-                }
 
-                // 已顯示選項
-                .optionsLabel {
-                    color: $Black;
-                    letter-spacing: .1em;
-                    font-weight: normal;
-                    font-size: 14px;
-                }
+                    input {
 
-                .creationDateBox {
-                    .form-check-label {
-                        margin-right: 0;
-
-                        input[type="radio"] {
-                            font-size: 16px;
-                            margin-top: 10px;
-                            margin-right: 5px;
+                        //提示字
+                        &::placeholder {
+                            font-size: 14px;
+                            color: $Gray-2;
+                            letter-spacing: .2rem;
                         }
 
-                        #creationDateInput {
-                            font-size: 16px;
-                            line-height: 35px;
-                            border: 1px dotted $Gray;
-                            border-radius: 3px;
-                            outline: none;
-                            text-align: center;
-                            letter-spacing: .2em;
+                    }
+
+                    
+                    //自訂-主要輔導項目需求區塊
+                    &.need {
+                        .labelTitle {
+                            @media (max-width: 992px) {
+                                letter-spacing: .6rem;
+                            }
+                        }
+
+                        .col-lg-9 {
+                            padding: .5rem 0;
+
+                            @media (max-width: 992px) {
+                                padding: 0;
+                            }
+                        }
+
+                        #helpItems {
+                            resize: none;
+                            height: 100px;
                         }
                     }
+
                 }
 
-                #helpItems {
-                    padding: 3px;
-                    resize: none;
-                    height: 80px;
-                }
 
-                .lastItem {
-                    label {
-                        line-height: 16px;
-                    }
-                }
-
-                // ==上傳==
+                // ==上傳區域==
                 .upLoadBox {
                     border: 1px solid $Gray;
+                    border-radius: 20px;
 
                     .upLoadTitle {
+                        letter-spacing: .5rem;
                         font-weight: 700;
-                        letter-spacing: 8px;
                         font-size: 18px;
-                        color: #d63900;
+                        color: $ttuRed;
                     }
 
                     label {
                         color: $Black;
-                        margin-bottom: 0;
-                        letter-spacing: 2px;
+                        letter-spacing: .1em;
                         cursor: pointer;
 
                         &:hover {
@@ -261,6 +260,7 @@ body {
                         font-size: 14px;
                     }
                 }
+
             }
         }
     }

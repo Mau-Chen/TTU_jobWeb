@@ -125,10 +125,13 @@ body {
             .formContent {
                 .formItems {
                     margin-bottom: 10px;
+                    font-size: 1rem;
 
                     @media (max-width: 992px) {
                         margin-bottom: 15px;
                     }
+
+            
 
                     label {
                         letter-spacing: .2rem;

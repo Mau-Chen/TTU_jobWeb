@@ -35,6 +35,7 @@ body {
             text-indent: -9999px;
             background: transparent url("../img/logo.png") left top no-repeat;
             margin-left: 20px;
+
         }
 
         h2 {
@@ -42,8 +43,11 @@ body {
             line-height: 2.5em;
             text-align: center;
             margin: 0;
-            // font-weight: 700;
             letter-spacing: 4.8px;
+
+            @media (max-width: 992px) {
+                line-height: 1.5em;
+            }
         }
 
         .formBox {
@@ -131,7 +135,7 @@ body {
                         margin-bottom: 15px;
                     }
 
-            
+
 
                     label {
                         letter-spacing: .2rem;
@@ -174,10 +178,12 @@ body {
                     .form-check {
                         padding-top: .35em;
                         padding-left: 1.5em;
+
                         @media (max-width: 992px) {
                             padding: 3px 35px;
                         }
-                        &.chooseHide{
+
+                        &.chooseHide {
                             padding-top: .25em;
                         }
 

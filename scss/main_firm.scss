@@ -11,9 +11,6 @@
 /*-- index --------------------------------------*/
 
 .allWrapper.firmIndex {
-    div {
-        // outline: 1px solid red;
-    }
 
     h3 {
         font-size: 2em;
@@ -89,4 +86,72 @@
             }
         }
     }
+}
+
+/*-- JobIndex -----------------------------------*/
+
+.Jobs{
+    h1{
+        letter-spacing: .2em;
+        color: $TitleGreen;
+        small{
+            color: $Gray;
+            letter-spacing: .05em;
+        }
+    }
+}
+
+/*-- 職缺一覽表表格 --*/
+.Jobs table {
+	border: 1px solid #CCB67A;
+}
+.Jobs table thead tr th {
+	color: #CCB67A;
+	font-size: 1em;
+	text-align: center;
+}
+
+.Jobs table tbody tr td {
+	color: #333;
+	text-align: center;
+}
+.Jobs table tbody tr td.text-right {
+	text-align: right;
+}
+
+select {
+	padding: 5px;
+}
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.myInput > input.form-control {
+	display: inline-block;
+	width: auto;
+}
+
+/*-- 廠商職缺公告 --*/
+.tab-pane {
+	padding-top: 20px;
+}
+.nav-tabs li a {
+	color: #4F804D;
+}
+.nav-tabs li.active a:focus {
+	color: #fff;
+	background-color: #CCB67A;
+}
+
+/*-- 燈箱 --------------------------------------*/
+.modal-header h2 {
+	font-size: 1.6em;
+	line-height: 2em;
+	color: #4F804D;
+	text-align: center;
+}
+.myJob th {
+	color: #CCB67A;
+	width: 5em;
+	padding: 0 10px;
 }

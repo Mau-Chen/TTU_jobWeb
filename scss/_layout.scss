@@ -85,9 +85,9 @@ body {
 @media (max-width: 767px) {
     .allWrapper {
         padding-bottom: 120px;
-        // padding-top: 100px;
     }
 }
+
 
 
 
@@ -111,9 +111,7 @@ footer {
     height: 45px;
     font-size: 34px;
     line-height: 1.2em;
-    // background-color: #8CCB9B;
     background-color: $SecondGreen;
-    // color:#FFF;
     color: $White;
     border-radius: 50%;
     box-shadow: 1px 1px 4px $Gray;

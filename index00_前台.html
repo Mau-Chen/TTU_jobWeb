@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>大同大學校內育成媒合平台</title>
+	<link href="./img/favicon.ico" rel="shortcut icon" />
+	<title>廠商 大同大學校內育成媒合平台</title>
 	<!-- Bootstrap CSS -->
 	<!-- <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
-    <!-- Font-awesome -->
-    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+	<!-- Font-awesome -->
+	<link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 	<!-- My CSS -->
-	<link rel="stylesheet" href="css/main_layout.css">
+	<!-- <link rel="stylesheet" href="css/main_layout.css"> -->
+	<link rel="stylesheet" href="./css/main_firm.css">
 
 	<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -21,516 +24,624 @@
 </head>
 
 <body>
-<!-- Nav選單 ========================================================================================= -->
-	<nav class="navbar navbar-fixed-top" role="navigation">
+	<!-- Nav選單 ========================================================================================= -->
+	<header>
+		<nav class="navbar fixed-top">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="./index00_廠商前台.html"><span
+						class="d-none d-md-inline">大同大學</span>校內育成媒合平台</a>
+				<div class="headerRight">
+					<button class="navbar-toggler visible logoutBtn mx-2 p-1" type="button" data-bs-toggle="tooltip"
+						data-bs-placement="bottom" title="點擊登出">
+						<span class="d-none d-md-inline">OO股份有限公司，您好</span>
+						<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+							<path
+								d="M12 18.25C11.8011 18.25 11.6103 18.329 11.4697 18.4697C11.329 18.6103 11.25 18.8011 11.25 19C11.25 19.1989 11.329 19.3897 11.4697 19.5303C11.6103 19.671 11.8011 19.75 12 19.75H18C18.4641 19.75 18.9092 19.5656 19.2374 19.2374C19.5656 18.9092 19.75 18.4641 19.75 18V6C19.75 5.53587 19.5656 5.09075 19.2374 4.76256C18.9092 4.43437 18.4641 4.25 18 4.25H12C11.8011 4.25 11.6103 4.32902 11.4697 4.46967C11.329 4.61032 11.25 4.80109 11.25 5C11.25 5.19891 11.329 5.38968 11.4697 5.53033C11.6103 5.67098 11.8011 5.75 12 5.75H18C18.0663 5.75 18.1299 5.77634 18.1768 5.82322C18.2237 5.87011 18.25 5.9337 18.25 6V18C18.25 18.0663 18.2237 18.1299 18.1768 18.1768C18.1299 18.2237 18.0663 18.25 18 18.25H12Z"
+								fill="black" />
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M14.5029 14.365C15.1929 14.365 15.7529 13.805 15.7529 13.115V10.875C15.7529 10.185 15.1929 9.62498 14.5029 9.62498H9.8899C9.88354 9.55162 9.87687 9.47828 9.8699 9.40498L9.8159 8.84898C9.79681 8.65261 9.73064 8.46373 9.62301 8.29838C9.51538 8.13302 9.36946 7.99606 9.19763 7.8991C9.0258 7.80214 8.83312 7.74805 8.63593 7.74142C8.43874 7.73478 8.24286 7.77579 8.0649 7.86098C6.43036 8.64418 4.95063 9.71604 3.6969 11.025L3.5979 11.128C3.37433 11.3612 3.24951 11.6719 3.24951 11.995C3.24951 12.3181 3.37433 12.6287 3.5979 12.862L3.6979 12.965C4.95134 14.2738 6.43072 15.3456 8.0649 16.129C8.24286 16.2142 8.43874 16.2552 8.63593 16.2485C8.83312 16.2419 9.0258 16.1878 9.19763 16.0909C9.36946 15.9939 9.51538 15.8569 9.62301 15.6916C9.73064 15.5262 9.79681 15.3374 9.8159 15.141L9.8699 14.585L9.8899 14.365H14.5029ZM9.1949 12.865C9.00405 12.8651 8.82044 12.938 8.68147 13.0688C8.54249 13.1996 8.45861 13.3785 8.4469 13.569C8.4279 13.859 8.4049 14.15 8.3769 14.44L8.3609 14.602C7.05547 13.9291 5.86801 13.0486 4.8449 11.995C5.86797 10.9413 7.05544 10.0608 8.3609 9.38798L8.3769 9.54998C8.4049 9.83998 8.4279 10.13 8.4469 10.421C8.45861 10.6115 8.54249 10.7903 8.68147 10.9211C8.82044 11.0519 9.00405 11.1248 9.1949 11.125H14.2529V12.865H9.1949Z"
+								fill="black" />
+						</svg></button>
 
-		<div class="Title">
-			<div class="container">
-				<a class="navbar-brand" href="javascript:;">大同大學<span>校內育成媒合平台</span></a>
+					<button class="navbar-toggler visible p-1" type="button" data-bs-toggle="offcanvas"
+						data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="true"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+
+				</div>
+				<!-- ==漢堡內容== -->
+				<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+					aria-labelledby="offcanvasNavbarLabel">
+					<div class="offcanvas-body">
+						<ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+							<li class="nav-item">
+								<a class="nav-link" aria-current="page" href="#">瀏覽職缺</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">職缺登錄</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">租賃紀錄</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">申請識別證</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">申請新約</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">申請續約</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">進度查詢</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">修改聯絡資訊</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">意見反應</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="index00_廠商前台.html">回到首頁</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
 			</div>
-		</div>
-
-	</nav>
-
-
-
-
- 	<!-- <hr/>我是一條線 -->
+		</nav>
+	</header>
 
 
 
 
+	<!-- <hr/>我是一條線 -->
 
-<!-- 職缺公告欄 ===================================================================-->
+
+
+
+
+	<!-- 職缺公告欄 ===================================================================-->
 	<div class="Jobs mb30">
-		<div class="container">
+		<div class="container allWrapper">
 			<div class="row">
-				<div class="col-sm-12">
+				<div class="col-sm-12 text-center">
 					<h1>育成廠商職缺公告<small>(依學系分類)</small></h1>
-				    <!-- 標籤面板-標籤區 -->
-				    <ul class="nav nav-tabs" role="tablist">
-				        <li class="active">
-				            <a href="#tabA" data-toggle="tab">全部</a>
-				        </li>
-				        <li>
-				            <a href="#tabB" data-toggle="tab">工程學系</a>
-				        </li>
-				        <li>
-				            <a href="#tabC" data-toggle="tab">經營學系</a>
-				        </li>
-				        <li>
-				            <a href="#tabD" data-toggle="tab">設計學系</a>
-				        </li>
-				        <li>
-				            <a href="#tabE" data-toggle="tab">國際語文</a>
-				        </li>
-				        <li>
-				            <a href="#tabF" data-toggle="tab">不限學系</a>
-				        </li>
-				    </ul>
-				
-				    <!-- 標籤面板-內容區 -->
-				    <div class="tab-content">
-				    	<!-- 標籤面板-內容區1全部 -->
-				        <div role="tabpanel" class="tab-pane active" id="tabA">
-		                    <table class="table">
-		                        <thead>
-		                            <tr>
-		                                <th>上架日期</th>
-		                                <th>公司名稱</th>
-		                                <th>職務名稱</th>
-		                                <th>工作性質</th>
-		                                <th>工作時間</th>
-		                                <th>下架日期</th>
-		                                <th>詳細內容</th>
-		                            </tr>
-		                        </thead>
-		                        <tbody>
-		                            <tr>
-		                                <td>2022/10/21</td>
-		                                <td>包山包海工程股份有限公司</td>
-		                                <td>電機工程師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/21</td>
-		                                <td>包山包海工程股份有限公司</td>
-		                                <td>光電工程師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/21</td>
-		                                <td>包山包海工程股份有限公司</td>
-		                                <td>軟體工程師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/21</td>
-		                                <td>包山包海工程股份有限公司</td>
-		                                <td>製造工程技師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/20</td>
-		                                <td>發大財銀行</td>
-		                                <td>金融研究人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/20</td>
-		                                <td>發大財銀行</td>
-		                                <td>銀行辦事人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/20</td>
-		                                <td>發大財銀行</td>
-		                                <td>財務／會計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/19</td>
-		                                <td>襄民文化出版社</td>
-		                                <td>口譯人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/19</td>
-		                                <td>襄民文化出版社</td>
-		                                <td>教材編輯人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/19</td>
-		                                <td>襄民文化出版社</td>
-		                                <td>語文補習班老師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/19</td>
-		                                <td>襄民文化出版社</td>
-		                                <td>技術文件／說明書編譯</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>平面設計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>服裝設計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>多媒體動畫設計師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>工業設計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>包裝設計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><a class="btn btn-default" href="javascript:;" role="button"><i class="fa fa-search"></i></a></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>高明醫療器材公司</td>
-		                                <td>行政人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/17</td>
-		                                <td>高明醫療器材公司</td>
-		                                <td>助理研究人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/16</td>
-		                                <td>高明醫療器材公司</td>
-		                                <td>秘書</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                        </tbody>
-		                    </table>
-				        </div>
-				    	<!-- 標籤面板-內容區2工程學系 -->
-				        <div role="tabpanel" class="tab-pane" id="tabB">
-		                    <table class="table">
-		                        <thead>
-		                            <tr>
-		                                <th>上架日期</th>
-		                                <th>公司名稱</th>
-		                                <th>職務名稱</th>
-		                                <th>工作性質</th>
-		                                <th>工作時間</th>
-		                                <th>下架日期</th>
-		                                <th>詳細內容</th>
-		                            </tr>
-		                        </thead>
-		                        <tbody>
-		                            <tr>
-		                                <td>2022/10/21</td>
-		                                <td>包山包海工程股份有限公司</td>
-		                                <td>電機工程師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/21</td>
-		                                <td>包山包海工程股份有限公司</td>
-		                                <td>光電工程師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/21</td>
-		                                <td>包山包海工程股份有限公司</td>
-		                                <td>軟體工程師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/21</td>
-		                                <td>包山包海工程股份有限公司</td>
-		                                <td>製造工程技師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                        </tbody>
-		                    </table>
-				        </div>
-				    	<!-- 標籤面板-內容區3經營學系 -->
-				        <div role="tabpanel" class="tab-pane" id="tabC">
-		                    <table class="table">
-		                        <thead>
-		                            <tr>
-		                                <th>上架日期</th>
-		                                <th>公司名稱</th>
-		                                <th>職務名稱</th>
-		                                <th>工作性質</th>
-		                                <th>工作時間</th>
-		                                <th>下架日期</th>
-		                                <th>詳細內容</th>
-		                            </tr>
-		                        </thead>
-		                        <tbody>
-		                            <tr>
-		                                <td>2022/10/20</td>
-		                                <td>發大財銀行</td>
-		                                <td>金融研究人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/20</td>
-		                                <td>發大財銀行</td>
-		                                <td>銀行辦事人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/20</td>
-		                                <td>發大財銀行</td>
-		                                <td>財務／會計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                        </tbody>
-		                    </table>
-				        </div>
-				    	<!-- 標籤面板-內容區4設計學系 -->
-				        <div role="tabpanel" class="tab-pane" id="tabD">
-		                    <table class="table">
-		                        <thead>
-		                            <tr>
-		                                <th>上架日期</th>
-		                                <th>公司名稱</th>
-		                                <th>職務名稱</th>
-		                                <th>工作性質</th>
-		                                <th>工作時間</th>
-		                                <th>下架日期</th>
-		                                <th>詳細內容</th>
-		                            </tr>
-		                        </thead>
-		                        <tbody>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>平面設計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>服裝設計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>多媒體動畫設計師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>工業設計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>創意有限公司</td>
-		                                <td>包裝設計助理</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><a class="btn btn-default" href="javascript:;" role="button"><i class="fa fa-search"></i></a></td>
-		                            </tr>
-		                        </tbody>
-		                    </table>
-				        </div>
-				    	<!-- 標籤面板-內容區5 -->
-				        <div role="tabpanel" class="tab-pane" id="tabE">
-		                    <table class="table">
-		                        <thead>
-		                            <tr>
-		                                <th>上架日期</th>
-		                                <th>公司名稱</th>
-		                                <th>職務名稱</th>
-		                                <th>工作性質</th>
-		                                <th>工作時間</th>
-		                                <th>下架日期</th>
-		                                <th>詳細內容</th>
-		                            </tr>
-		                        </thead>
-		                        <tbody>
-		                            <tr>
-		                                <td>2022/10/19</td>
-		                                <td>襄民文化出版社</td>
-		                                <td>口譯人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/19</td>
-		                                <td>襄民文化出版社</td>
-		                                <td>教材編輯人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/19</td>
-		                                <td>襄民文化出版社</td>
-		                                <td>語文補習班老師</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/19</td>
-		                                <td>襄民文化出版社</td>
-		                                <td>技術文件／說明書編譯</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                        </tbody>
-		                    </table>
-				        </div>
-				    	<!-- 標籤面板-內容區6 -->
-				        <div role="tabpanel" class="tab-pane" id="tabF">
-		                    <table class="table">
-		                        <thead>
-		                            <tr>
-		                                <th>上架日期</th>
-		                                <th>公司名稱</th>
-		                                <th>職務名稱</th>
-		                                <th>工作性質</th>
-		                                <th>工作時間</th>
-		                                <th>下架日期</th>
-		                                <th>詳細內容</th>
-		                            </tr>
-		                        </thead>
-		                        <tbody>
-		                            <tr>
-		                                <td>2022/10/18</td>
-		                                <td>高明醫療器材公司</td>
-		                                <td>行政人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/17</td>
-		                                <td>高明醫療器材公司</td>
-		                                <td>助理研究人員</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                            <tr>
-		                                <td>2022/10/16</td>
-		                                <td>高明醫療器材公司</td>
-		                                <td>秘書</td>
-		                                <td>工讀</td>
-		                                <td>日班</td>
-		                                <td>2022/11/30</td>
-		                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
-		                            </tr>
-		                        </tbody>
-		                    </table>
-				        </div>
+					<!-- 標籤面板-標籤區 -->
+					<ul class="nav nav-tabs" role="tablist">
+						<li class="nav-item" role="presentation">
+							<button type="button" data-bs-target="#tabA" data-bs-toggle="tab" class="nav-link active"
+								role="tab" aria-controls="tabA" aria-selected="true" id="tabA-tab">全部</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button type="button" data-bs-target="#tabB" data-bs-toggle="tab" class="nav-link"
+								role="tab" aria-controls="tabB" aria-selected="false" id="tabB-tab">工程學系</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button type="button" data-bs-target="#tabC" data-bs-toggle="tab" class="nav-link"
+								role="tab" aria-controls="tabC" aria-selected="false" id="tabC-tab">經營學系</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button type="button" data-bs-target="#tabD" data-bs-toggle="tab" class="nav-link"
+								role="tab" aria-controls="tabD" aria-selected="false" id="tabD-tab">設計學系</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button type="button" data-bs-target="#tabE" data-bs-toggle="tab" class="nav-link"
+								role="tab" aria-controls="tabE" aria-selected="false" id="tabE-tab">國際語文</button>
+						</li>
+						<li class="nav-item" role="presentation">
+							<button type="button" data-bs-target="#tabF" data-bs-toggle="tab" class="nav-link"
+								role="tab" aria-controls="tabF" aria-selected="false" id="tabF-tab">不限學系</button>
+						</li>
+					</ul>
+
+					<!-- 標籤面板-內容區 -->
+					<div class="tab-content">
+						<!-- 標籤面板-內容區1全部 -->
+						<div role="tabpanel" class="tab-pane fade show active" id="tabA" role="tabpanel"
+							aria-labelledby="tabA-tab" tabindex="0">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>上架日期</th>
+										<th>公司名稱</th>
+										<th>職務名稱</th>
+										<th>工作性質</th>
+										<th>工作時間</th>
+										<th>下架日期</th>
+										<th>詳細內容</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2022/10/21</td>
+										<td>包山包海工程股份有限公司</td>
+										<td>電機工程師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/21</td>
+										<td>包山包海工程股份有限公司</td>
+										<td>光電工程師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/21</td>
+										<td>包山包海工程股份有限公司</td>
+										<td>軟體工程師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/21</td>
+										<td>包山包海工程股份有限公司</td>
+										<td>製造工程技師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/20</td>
+										<td>發大財銀行</td>
+										<td>金融研究人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/20</td>
+										<td>發大財銀行</td>
+										<td>銀行辦事人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/20</td>
+										<td>發大財銀行</td>
+										<td>財務／會計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/19</td>
+										<td>襄民文化出版社</td>
+										<td>口譯人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/19</td>
+										<td>襄民文化出版社</td>
+										<td>教材編輯人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/19</td>
+										<td>襄民文化出版社</td>
+										<td>語文補習班老師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/19</td>
+										<td>襄民文化出版社</td>
+										<td>技術文件／說明書編譯</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>平面設計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>服裝設計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>多媒體動畫設計師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>工業設計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>包裝設計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><a class="btn btn-default" href="javascript:;" role="button"><i
+													class="fa fa-search"></i></a></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>高明醫療器材公司</td>
+										<td>行政人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/17</td>
+										<td>高明醫療器材公司</td>
+										<td>助理研究人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/16</td>
+										<td>高明醫療器材公司</td>
+										<td>秘書</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 標籤面板-內容區2工程學系 -->
+						<div role="tabpanel" class="tab-pane fade" id="tabB" role="tabpanel" aria-labelledby="tabB-tab"
+							tabindex="0">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>上架日期</th>
+										<th>公司名稱</th>
+										<th>職務名稱</th>
+										<th>工作性質</th>
+										<th>工作時間</th>
+										<th>下架日期</th>
+										<th>詳細內容</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2022/10/21</td>
+										<td>包山包海工程股份有限公司</td>
+										<td>電機工程師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/21</td>
+										<td>包山包海工程股份有限公司</td>
+										<td>光電工程師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/21</td>
+										<td>包山包海工程股份有限公司</td>
+										<td>軟體工程師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/21</td>
+										<td>包山包海工程股份有限公司</td>
+										<td>製造工程技師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 標籤面板-內容區3經營學系 -->
+						<div role="tabpanel" class="tab-pane fade" id="tabC" role="tabpanel" aria-labelledby="tabC-tab"
+							tabindex="0">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>上架日期</th>
+										<th>公司名稱</th>
+										<th>職務名稱</th>
+										<th>工作性質</th>
+										<th>工作時間</th>
+										<th>下架日期</th>
+										<th>詳細內容</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2022/10/20</td>
+										<td>發大財銀行</td>
+										<td>金融研究人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/20</td>
+										<td>發大財銀行</td>
+										<td>銀行辦事人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/20</td>
+										<td>發大財銀行</td>
+										<td>財務／會計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 標籤面板-內容區4設計學系 -->
+						<div role="tabpanel" class="tab-pane fade" id="tabD" role="tabpanel" aria-labelledby="tabD-tab"
+							tabindex="0">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>上架日期</th>
+										<th>公司名稱</th>
+										<th>職務名稱</th>
+										<th>工作性質</th>
+										<th>工作時間</th>
+										<th>下架日期</th>
+										<th>詳細內容</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>平面設計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>服裝設計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>多媒體動畫設計師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>工業設計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/18</td>
+										<td>創意有限公司</td>
+										<td>包裝設計助理</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><a class="btn btn-default" href="javascript:;" role="button"><i
+													class="fa fa-search"></i></a></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 標籤面板-內容區5 -->
+						<div role="tabpanel" class="tab-pane fade" id="tabE" role="tabpanel" aria-labelledby="tabE-tab"
+							tabindex="0">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>上架日期</th>
+										<th>公司名稱</th>
+										<th>職務名稱</th>
+										<th>工作性質</th>
+										<th>工作時間</th>
+										<th>下架日期</th>
+										<th>詳細內容</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2022/10/19</td>
+										<td>襄民文化出版社</td>
+										<td>口譯人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/19</td>
+										<td>襄民文化出版社</td>
+										<td>教材編輯人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/19</td>
+										<td>襄民文化出版社</td>
+										<td>語文補習班老師</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/19</td>
+										<td>襄民文化出版社</td>
+										<td>技術文件／說明書編譯</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<!-- 標籤面板-內容區6 -->
+						<div role="tabpanel" class="tab-pane fade" id="tabF" role="tabpanel" aria-labelledby="tabF-tab"
+							tabindex="0">
+							<table class="table">
+								<thead>
+									<tr>
+										<th>上架日期</th>
+										<th>公司名稱</th>
+										<th>職務名稱</th>
+										<th>工作性質</th>
+										<th>工作時間</th>
+										<th>下架日期</th>
+										<th>詳細內容</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>2022/10/18</td>
+										<td>高明醫療器材公司</td>
+										<td>行政人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/17</td>
+										<td>高明醫療器材公司</td>
+										<td>助理研究人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td>2022/10/16</td>
+										<td>高明醫療器材公司</td>
+										<td>秘書</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td>2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 
 
 
 
-				    </div><!-- .tab-content end -->
+					</div><!-- .tab-content end -->
 
 				</div><!-- .col-sm-12 -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </div><!-- .Content -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</div><!-- .Content -->
 
 
 
@@ -539,17 +650,15 @@
 
 
 
-<!-- Footer ============================================================================ -->
-    <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-12">
-                    <p>大同大學 版權所有©2022 All Rights Reserved.</p>
-                    <p>建議使用：IE9.0以上版本或Google Chrome瀏覽器 (最佳螢幕解析1280*1024)</p>
-                </div>
-            </div>
-        </div>
-    </div>
+	<!-- Footer ============================================================================ -->
+	<footer class="fixed-bottom">
+		<div class="container px-4 py-2">
+			<div class="row p-3">
+				<p class="mb-0 p-1">大同大學 版權所有©2022 All Rights Reserved.</p>
+				<p class="mb-0 p-1">建議使用：IE9.0以上版本或Google Chrome瀏覽器 (最佳螢幕解析1280*1024)</p>
+			</div>
+		</div>
+	</footer>
 
 
 
@@ -565,9 +674,10 @@
 
 
 
-<!-- 燈箱 ============================================================================ -->
-	<div class="modal fade" id="myModal" tabindex="-1">
-		<div class="modal-dialog modal-lg">
+	<!-- 燈箱 ============================================================================ -->
+	<div class="modal fade modal-lg" id="myModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+		aria-hidden="true" aria-labelledby="jobDetialLabel">
+		<div class="modal-dialog  modal-dialog-scrollable">
 			<div class="modal-content">
 				<div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
@@ -577,46 +687,48 @@
 					<table class="table table-striped myJob">
 						<tbody>
 							<tr>
-							    <th>公司名稱</th>
-							    <td colspan="5">包山包海工程股份有限公司</td>
+								<th>公司名稱</th>
+								<td colspan="5">包山包海工程股份有限公司</td>
 							</tr>
 							<tr>
-							    <th>公司簡介</th>
-                                <td colspan="5">低價經濟增強某些晶片節目好像商標上網生成，只見適當當前位置團體玄幻簽名，連載一點國產等待除了壓縮網通創新採，太陽加油正好聯繫附近配合衝，同樣地上臨床原理有一自治區之處簡直三大生物權益適應判斷，直到尤其是內存的確取得因此戰略此處黑色當然正文監控面，這樣選擇她說外貿性格你看體會笑着分別多媒體，生成版本控制一生當前唱片身子處罰發，存在要在引導手機主頁一年總經理報紙是什麼意識觀察榮譽照片打電，大人一對你。</td>
+								<th>公司簡介</th>
+								<td colspan="5">
+									低價經濟增強某些晶片節目好像商標上網生成，只見適當當前位置團體玄幻簽名，連載一點國產等待除了壓縮網通創新採，太陽加油正好聯繫附近配合衝，同樣地上臨床原理有一自治區之處簡直三大生物權益適應判斷，直到尤其是內存的確取得因此戰略此處黑色當然正文監控面，這樣選擇她說外貿性格你看體會笑着分別多媒體，生成版本控制一生當前唱片身子處罰發，存在要在引導手機主頁一年總經理報紙是什麼意識觀察榮譽照片打電，大人一對你。
+								</td>
 							</tr>
 							<tr>
-							    <th>職務名稱</th>
-							    <td>平面設計助理</td>
-                                <th>工作性質</th>
-                                <td>全職</td>
-                                <th>科系限制</th>
-                                <td>園藝相關科系</td>
+								<th>職務名稱</th>
+								<td>平面設計助理</td>
+								<th>工作性質</th>
+								<td>全職</td>
+								<th>科系限制</th>
+								<td>園藝相關科系</td>
 							</tr>
 							<tr>
-                                <th>工作時間</th>
-                                <td>09:00~10:00</td>
+								<th>工作時間</th>
+								<td>09:00~10:00</td>
 								<th>休假制度</th>
 								<td>周休6日</td>
-                                <th>工作待遇</th>
-                                <td>自己開價</td>
+								<th>工作待遇</th>
+								<td>自己開價</td>
 							</tr>
 							<tr>
-                                <th>工作內容</th>
-                                <td colspan="5">澆花、餵魚</td>
+								<th>工作內容</th>
+								<td colspan="5">澆花、餵魚</td>
 							</tr>
 							<tr>
-                                <th>附加條件</th>
-                                <td colspan="5">會吃苦耐勞、忍氣吞聲</td>
+								<th>附加條件</th>
+								<td colspan="5">會吃苦耐勞、忍氣吞聲</td>
 							</tr>
 							<tr>
-                                <th>應徵方式</th>
-                                <td colspan="5">手寫履歷表傳真至02-25957646</td>
+								<th>應徵方式</th>
+								<td colspan="5">手寫履歷表傳真至02-25957646</td>
 							</tr>
 							<tr>
-                                <th>工作地點</th>
-                                <td colspan="3">老闆家</td>
-                                <th>下架日期</th>
-                                <td>2022/11/30</td>
+								<th>工作地點</th>
+								<td colspan="3">老闆家</td>
+								<th>下架日期</th>
+								<td>2022/11/30</td>
 							</tr>
 						</tbody>
 					</table>
@@ -666,4 +778,5 @@
 
 
 </body>
+
 </html>

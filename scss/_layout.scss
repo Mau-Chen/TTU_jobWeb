@@ -6,12 +6,32 @@ h3,
 h5 {
     font-weight: 700;
 }
+textarea{
+    resize: none;
+}
 
 body {
     font-family: Arial, Helvetica, "Microsoft JhengHei", "sans-serif";
     font-size: 16px;
     color: $Black;
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
 
+}
+
+// 按鈕共用
+.submitBtn, .lightBoxBtn{
+    button {
+        background-color: $TitleGreen;
+        border: 0;
+        // font-weight: 700;
+        color: $White;
+
+        &:hover {
+            background-color: $TitleYellow;
+        }
+    }
 }
 
 /*-- Navbar --------------------------------------*/
@@ -127,4 +147,26 @@ footer {
         transform: scale(1);
         box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .2);
     }
+}
+
+/*-- 燈箱共用 ------------------------------*/
+.lightBox{
+    .btn-close {
+        color: $Gray;
+        border: 2px solid $Gray;
+
+        &:hover {
+            border-color: $Black;
+        }
+    }
+    .modal-content{
+        .modal-header {
+            h2 {
+                color: $TitleGreen;
+                letter-spacing: 0.8em;
+                font-weight: 700;
+            }
+        }
+    }
+
 }

@@ -1,33 +1,102 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>大同大學校內育成媒合平台</title>
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="./img/favicon.ico" rel="shortcut icon" />
+    <title>廠商 新增職缺 大同大學校內育成媒合平台</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="assets/bootstrap-3.3.7-dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <!-- Font-awesome -->
     <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
-	<!-- My CSS -->
-	<link rel="stylesheet" href="css/main_layout.css">
+    <!-- My CSS -->
+    <!-- <link rel="stylesheet" href="css/main_layout.css"> -->
+    <link rel="stylesheet" href="./css/main_firm.css">
 
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-	<![endif]-->
+    <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
 </head>
 
 <body>
-<!-- Nav選單 ========================================================================================= -->
-	<nav class="navbar navbar-fixed-top" role="navigation">
+    <!-- Nav選單 ========================================================================================= -->
 
-		<div class="Title">
-			<div class="container">
-				<a class="navbar-brand" href="javascript:;">大同大學<span>校內育成媒合平台</span></a>
-				<!-- 個人登入狀態 -->
-				<div class="User">
+    <!-- Nav選單 ========================================================================================= -->
+    <header>
+        <nav class="navbar fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="./index00_廠商前台.html"><span
+                        class="d-none d-md-inline">大同大學</span>校內育成媒合平台</a>
+                <div class="headerRight">
+                    <button class="navbar-toggler visible logoutBtn mx-2 p-1" type="button" data-bs-toggle="tooltip"
+                        data-bs-placement="bottom" title="點擊登出">
+                        <span class="d-none d-md-inline">OO股份有限公司，您好</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path
+                                d="M12 18.25C11.8011 18.25 11.6103 18.329 11.4697 18.4697C11.329 18.6103 11.25 18.8011 11.25 19C11.25 19.1989 11.329 19.3897 11.4697 19.5303C11.6103 19.671 11.8011 19.75 12 19.75H18C18.4641 19.75 18.9092 19.5656 19.2374 19.2374C19.5656 18.9092 19.75 18.4641 19.75 18V6C19.75 5.53587 19.5656 5.09075 19.2374 4.76256C18.9092 4.43437 18.4641 4.25 18 4.25H12C11.8011 4.25 11.6103 4.32902 11.4697 4.46967C11.329 4.61032 11.25 4.80109 11.25 5C11.25 5.19891 11.329 5.38968 11.4697 5.53033C11.6103 5.67098 11.8011 5.75 12 5.75H18C18.0663 5.75 18.1299 5.77634 18.1768 5.82322C18.2237 5.87011 18.25 5.9337 18.25 6V18C18.25 18.0663 18.2237 18.1299 18.1768 18.1768C18.1299 18.2237 18.0663 18.25 18 18.25H12Z"
+                                fill="black" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M14.5029 14.365C15.1929 14.365 15.7529 13.805 15.7529 13.115V10.875C15.7529 10.185 15.1929 9.62498 14.5029 9.62498H9.8899C9.88354 9.55162 9.87687 9.47828 9.8699 9.40498L9.8159 8.84898C9.79681 8.65261 9.73064 8.46373 9.62301 8.29838C9.51538 8.13302 9.36946 7.99606 9.19763 7.8991C9.0258 7.80214 8.83312 7.74805 8.63593 7.74142C8.43874 7.73478 8.24286 7.77579 8.0649 7.86098C6.43036 8.64418 4.95063 9.71604 3.6969 11.025L3.5979 11.128C3.37433 11.3612 3.24951 11.6719 3.24951 11.995C3.24951 12.3181 3.37433 12.6287 3.5979 12.862L3.6979 12.965C4.95134 14.2738 6.43072 15.3456 8.0649 16.129C8.24286 16.2142 8.43874 16.2552 8.63593 16.2485C8.83312 16.2419 9.0258 16.1878 9.19763 16.0909C9.36946 15.9939 9.51538 15.8569 9.62301 15.6916C9.73064 15.5262 9.79681 15.3374 9.8159 15.141L9.8699 14.585L9.8899 14.365H14.5029ZM9.1949 12.865C9.00405 12.8651 8.82044 12.938 8.68147 13.0688C8.54249 13.1996 8.45861 13.3785 8.4469 13.569C8.4279 13.859 8.4049 14.15 8.3769 14.44L8.3609 14.602C7.05547 13.9291 5.86801 13.0486 4.8449 11.995C5.86797 10.9413 7.05544 10.0608 8.3609 9.38798L8.3769 9.54998C8.4049 9.83998 8.4279 10.13 8.4469 10.421C8.45861 10.6115 8.54249 10.7903 8.68147 10.9211C8.82044 11.0519 9.00405 11.1248 9.1949 11.125H14.2529V12.865H9.1949Z"
+                                fill="black" />
+                        </svg></button>
+
+                    <button class="navbar-toggler visible p-1" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="true"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                </div>
+                <!-- ==漢堡內容== -->
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="#">瀏覽職缺</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">職缺登錄</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">租賃紀錄</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">申請識別證</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">申請新約</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">申請續約</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">進度查詢</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">修改聯絡資訊</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">意見反應</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="index00_廠商前台.html">回到首頁</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <a class="navbar-brand" href="javascript:;">大同大學<span>校內育成媒合平台</span></a> -->
+    <!-- 個人登入狀態 -->
+    <!-- <div class="User">
 					<div class="btn-group">
 						<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">OO股份有限公司，您好
 						<span class="caret"></span></button>
@@ -35,33 +104,237 @@
 							<li><a href="javascript:;"><i class="fa fa-sign-out"></i> 登出</a></li>
 						</ul>
 					</div>
-				</div>
-			</div>
-		</div>
+				</div> -->
+    <div class="container allWrapper CreateJob">
 
-	</nav>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>職缺登錄</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="jobTitle" class="col-form-label">職務名稱：</label>
+                        </div>
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="jobTitle">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="jobEmployment" class="col-form-label">工作性質：</label>
+                        </div>
+                        <div class="col-md-8">
+                            <select class="form-control form-select" id="jobEmployment">
+                                <option selected>--- 請選擇 ---</option>
+                                <option value="1">全職</option>
+                                <option value="2">工讀</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="jobContent" class="col-form-label">工作內容：</label>
+                        </div>
+                        <div class="col-md-8">
+                            <textarea class="form-control" rows="3" id="jobContent"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="jobLocation" class="col-form-label">工作地點：</label>
+                        </div>
+                        <div class="col-md-8">
+                            <textarea class="form-control" rows="3" id="jobLocation"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="jobDepartment" class="col-form-label">科系限制：</label>
+                        </div>
+                        <div class="col-md-8">
+                            <select class="form-control form-select" id="jobDepartment">
+                                <option selected>--- 請選擇 ---</option>
+                                <option value="">無</option>
+                                <option value="">電子</option>
+                                <option value="">機械</option>
+                                <option value="">化工</option>
+                                <option value="">會計</option>
+                                <option value="">資管</option>
+                                <option value="">工業設計</option>
+                                <option value="">語文</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <label for="jobTime" class="col-form-label">工作時間：</label>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text">自</span>
+                                        <select class="form-control form-select" id="startHour">
+                                            <option selected>--- 請選擇 ---</option>
+                                            <option value="">07時</option>
+                                            <option value="">08時</option>
+                                            <option value="">09時</option>
+                                            <option value="">07時</option>
+                                            <option value="">08時</option>
+                                            <option value="">09時</option>
+                                        </select>
+                                        <select class="form-control form-select" id="startMinute">
+                                            <option selected>--- 請選擇 ---</option>
+                                            <option value="">00分</option>
+                                            <option value="">01分</option>
+                                            <option value="">02分</option>
+                                            <option value="">03分</option>
+                                            <option value="">04分</option>
+                                            <option value="">05分</option>
+                                            <option value="">06分</option>
+                                            <option value="">07分</option>
+                                            <option value="">08分</option>
+                                            <option value="">09分</option>
+                                            <option value="">10分</option>
+                                            <option value="">11分</option>
+                                            <option value="">12分</option>
+                                            <option value="">13分</option>
+                                            <option value="">14分</option>
+                                            <option value="">15分</option>
+                                            <option value="">16分</option>
+                                            <option value="">17分</option>
+                                            <option value="">18分</option>
+                                            <option value="">19分</option>
+                                            <option value="">20分</option>
+                                            <option value="">21分</option>
+                                            <option value="">22分</option>
+                                            <option value="">23分</option>
+                                            <option value="">24分</option>
+                                            <option value="">25分</option>
+                                            <option value="">26分</option>
+                                            <option value="">27分</option>
+                                            <option value="">28分</option>
+                                            <option value="">29分</option>
+                                            <option value="">30分</option>
+                                            <option value="">31分</option>
+                                            <option value="">32分</option>
+                                            <option value="">33分</option>
+                                            <option value="">34分</option>
+                                            <option value="">35分</option>
+                                            <option value="">36分</option>
+                                            <option value="">37分</option>
+                                            <option value="">38分</option>
+                                            <option value="">39分</option>
+                                            <option value="">40分</option>
+                                            <option value="">41分</option>
+                                            <option value="">42分</option>
+                                            <option value="">43分</option>
+                                            <option value="">44分</option>
+                                            <option value="">45分</option>
+                                            <option value="">46分</option>
+                                            <option value="">47分</option>
+                                            <option value="">48分</option>
+                                            <option value="">49分</option>
+                                            <option value="">50分</option>
+                                            <option value="">51分</option>
+                                            <option value="">52分</option>
+                                            <option value="">53分</option>
+                                            <option value="">54分</option>
+                                            <option value="">55分</option>
+                                            <option value="">56分</option>
+                                            <option value="">57分</option>
+                                            <option value="">58分</option>
+                                            <option value="">59分</option>
+                                        </select>
+                                        <span class="input-group-text">起</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                        </div>
+                        <div class="col-md-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-<!-- 職缺登錄 ========================================================================================= -->
-	<div class="Content">
-		<div class="container">
-			<div class="row">
-				<h1>職缺登錄</h1>
-				<div class="col-sm-4 table-responsive">
-                    <table class="table Mytable">
+    <!-- 職缺登錄 ========================================================================================= -->
+    <div class="Content">
+        <div class="container">
+            <div class="row">
+                <!-- <h1>職缺登錄</h1> -->
+                <div class="col-sm-4 table-responsive">
+                    <!-- <table class="table Mytable">
                         <tbody>
                             <tr>
                                 <td><label class="control-label">職務名稱：</label></td>
@@ -70,11 +343,11 @@
                             <tr>
                                 <td><label class="control-label">工作性質：</label></td>
                                 <td>
-									<select class="form-control">
-									  <option>全職</option>
-									  <option>工讀</option>
-									</select>
-								</td>
+                                    <select class="form-control">
+                                        <option>全職</option>
+                                        <option>工讀</option>
+                                    </select>
+                                </td>
                             </tr>
                             <tr>
                                 <td><label class="control-label">工作內容：</label></td>
@@ -88,45 +361,45 @@
                                 <td><label class="control-label">科系限制：</label></td>
                                 <td>
                                     <select class="form-control">
-                                      <option>無</option>
-                                      <option>電子</option>
-                                      <option>機械</option>
-                                      <option>化工</option>
-                                      <option>會計</option>
-                                      <option>資管</option>
-                                      <option>工業設計</option>
-                                      <option>語文</option>
+                                        <option>無</option>
+                                        <option>電子</option>
+                                        <option>機械</option>
+                                        <option>化工</option>
+                                        <option>會計</option>
+                                        <option>資管</option>
+                                        <option>工業設計</option>
+                                        <option>語文</option>
                                     </select>
                                 </td>
                             </tr>
                         </tbody>
-                    </table>
+                    </table> -->
                 </div>
                 <div class="col-sm-4 table-responsive">
                     <table class="table Mytable">
-                            <tbody>
+                        <tbody>
                             <tr>
                                 <td rowspan="2"><label class="control-label">工作時間：</label></td>
                                 <td class="myInput">
-                            		<div class="input-group">
+                                    <div class="input-group">
                                         <div class="input-group-addon">自</div>
                                         <select class="form-control">
-                                          <option>07時</option>
-                                          <option>08時</option>
-                                          <option>09時</option>
-                                          <option>10時</option>
-                                          <option>11時</option>
-                                          <option>12時</option>
-                                          <option>12</option>
+                                            <option>07時</option>
+                                            <option>08時</option>
+                                            <option>09時</option>
+                                            <option>10時</option>
+                                            <option>11時</option>
+                                            <option>12時</option>
+                                            <option>12</option>
                                         </select>
                                         <select class="form-control">
-                                          <option>7分</option>
-                                          <option>8分</option>
-                                          <option>9分</option>
-                                          <option>10分</option>
-                                          <option>11分</option>
-                                          <option>12分</option>
-                                          <option>12分</option>
+                                            <option>7分</option>
+                                            <option>8分</option>
+                                            <option>9分</option>
+                                            <option>10分</option>
+                                            <option>11分</option>
+                                            <option>12分</option>
+                                            <option>12分</option>
                                         </select>
                                         <div class="input-group-addon">起</div>
                                     </div>
@@ -137,22 +410,22 @@
                                     <div class="input-group">
                                         <div class="input-group-addon">至</div>
                                         <select class="form-control">
-                                          <option>07時</option>
-                                          <option>08時</option>
-                                          <option>09時</option>
-                                          <option>10時</option>
-                                          <option>11時</option>
-                                          <option>12時</option>
-                                          <option>12</option>
+                                            <option>07時</option>
+                                            <option>08時</option>
+                                            <option>09時</option>
+                                            <option>10時</option>
+                                            <option>11時</option>
+                                            <option>12時</option>
+                                            <option>12</option>
                                         </select>
                                         <select class="form-control">
-                                          <option>7分</option>
-                                          <option>8分</option>
-                                          <option>9分</option>
-                                          <option>10分</option>
-                                          <option>11分</option>
-                                          <option>12分</option>
-                                          <option>12分</option>
+                                            <option>7分</option>
+                                            <option>8分</option>
+                                            <option>9分</option>
+                                            <option>10分</option>
+                                            <option>11分</option>
+                                            <option>12分</option>
+                                            <option>12分</option>
                                         </select>
                                         <div class="input-group-addon">止</div>
                                     </div>
@@ -161,12 +434,12 @@
                             <tr>
                                 <td><label class="control-label">休假制度：</label></td>
                                 <td>
-									<select class="form-control">
-									  <option>周休二日</option>
-									  <option>排假</option>
-									  <option>其它</option>
-									</select>
-								</td>
+                                    <select class="form-control">
+                                        <option>周休二日</option>
+                                        <option>排假</option>
+                                        <option>其它</option>
+                                    </select>
+                                </td>
                             </tr>
                             <tr>
                                 <td><label class="control-label">附加條件：</label></td>
@@ -187,10 +460,10 @@
                                 <td><label class="control-label">工作待遇：</label></td>
                                 <td class="myInput">
                                     <select class="form-control">
-                                      <option>月薪</option>
-                                      <option>日薪</option>
-                                      <option>時薪</option>
-                                      <option>按件計酬</option>
+                                        <option>月薪</option>
+                                        <option>日薪</option>
+                                        <option>時薪</option>
+                                        <option>按件計酬</option>
                                     </select>
                                 </td>
                             </tr>
@@ -200,11 +473,14 @@
                                     <div class="radio">
                                         <div class="form-group">
                                             <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                                                <input type="radio" name="optionsRadios" id="optionsRadios1"
+                                                    value="option1" checked>
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <input type="text" class="form-control" id="exampleInputAmount"
+                                                        placeholder="NTD">
                                                     <div class="input-group-addon">元至</div>
-                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <input type="text" class="form-control" id="exampleInputAmount"
+                                                        placeholder="NTD">
                                                     <div class="input-group-addon">元</div>
                                                 </div>
                                             </label>
@@ -213,9 +489,11 @@
                                     <div class="radio">
                                         <div class="form-group">
                                             <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios2"
+                                                    value="option2">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <input type="text" class="form-control" id="exampleInputAmount"
+                                                        placeholder="NTD">
                                                     <div class="input-group-addon">元</div>
                                                 </div>
                                             </label>
@@ -224,9 +502,11 @@
                                     <div class="radio">
                                         <div class="form-group">
                                             <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios3"
+                                                    value="option3">
                                                 <div class="input-group">
-                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <input type="text" class="form-control" id="exampleInputAmount"
+                                                        placeholder="NTD">
                                                     <div class="input-group-addon">元以上</div>
                                                 </div>
                                             </label>
@@ -235,10 +515,12 @@
                                     <div class="radio">
                                         <div class="form-group">
                                             <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
+                                                <input type="radio" name="optionsRadios" id="optionsRadios4"
+                                                    value="option4">
                                                 <div class="input-group">
                                                     <div class="input-group-addon">面議</div>
-                                                    <input type="text" class="form-control" id="exampleInputAmount" placeholder="NTD">
+                                                    <input type="text" class="form-control" id="exampleInputAmount"
+                                                        placeholder="NTD">
                                                     <div class="input-group-addon">元以上</div>
                                                 </div>
                                             </label>
@@ -283,32 +565,33 @@
                 </div>
 
                 <div class="col-sm-12 text-center">
-		    		<button type="button" class="btn btn-lg btn-danger">重填</button>&nbsp;
-		    		<button type="button" class="btn btn-lg btn-success">送出資料</button>
+                    <button type="button" class="btn btn-lg btn-danger">重填</button>&nbsp;
+                    <button type="button" class="btn btn-lg btn-success">送出資料</button>
                 </div>
 
 
-			</div><!-- row -->
-		</div><!-- container -->
-	</div><!-- Content -->
+            </div><!-- row -->
+        </div><!-- container -->
+    </div><!-- Content -->
 
 
 
 
 
 
- 	<hr/><!-- 我是一條線 -->
+    <hr /><!-- 我是一條線 -->
 
 
 
 
 
-<!-- 已登錄職缺 ===================================================================-->
-	<div class="Jobs mb30">
-		<div class="container">
-			<div class="row">
-            	<h1>已登錄職缺 <button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i> 刪除</button></h1>
-            	
+    <!-- 已登錄職缺 ===================================================================-->
+    <div class="Jobs mb30">
+        <div class="container">
+            <div class="row">
+                <h1>已登錄職缺 <button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
+                        刪除</button></h1>
+
                 <div class="col-sm-12">
                     <table class="table">
                         <thead>
@@ -330,7 +613,8 @@
                                 <td>工讀</td>
                                 <td>日班</td>
                                 <td>2022/11/30</td>
-                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
+                                <td><button type="button" class="btn btn-default" data-toggle="modal"
+                                        data-target="#myModal"><i class="fa fa-search"></i></button></td>
                             </tr>
                             <tr>
                                 <td><label><input type="checkbox"></label></td>
@@ -339,7 +623,8 @@
                                 <td>工讀</td>
                                 <td>日班</td>
                                 <td>2022/11/30</td>
-                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
+                                <td><button type="button" class="btn btn-default" data-toggle="modal"
+                                        data-target="#myModal"><i class="fa fa-search"></i></button></td>
                             </tr>
                             <tr>
                                 <td><label><input type="checkbox"></label></td>
@@ -348,7 +633,8 @@
                                 <td>工讀</td>
                                 <td>日班</td>
                                 <td>2022/11/30</td>
-                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
+                                <td><button type="button" class="btn btn-default" data-toggle="modal"
+                                        data-target="#myModal"><i class="fa fa-search"></i></button></td>
                             </tr>
                             <tr>
                                 <td><label><input type="checkbox"></label></td>
@@ -357,7 +643,8 @@
                                 <td>工讀</td>
                                 <td>日班</td>
                                 <td>2022/11/30</td>
-                                <td><button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal"><i class="fa fa-search"></i></button></td>
+                                <td><button type="button" class="btn btn-default" data-toggle="modal"
+                                        data-target="#myModal"><i class="fa fa-search"></i></button></td>
                             </tr>
                             <tr>
                                 <td><label><input type="checkbox"></label></td>
@@ -366,7 +653,8 @@
                                 <td>工讀</td>
                                 <td>日班</td>
                                 <td>2022/11/30</td>
-                                <td><a class="btn btn-default" href="javascript:;" role="button"><i class="fa fa-search"></i></a></td>
+                                <td><a class="btn btn-default" href="javascript:;" role="button"><i
+                                            class="fa fa-search"></i></a></td>
                             </tr>
                         </tbody>
                     </table>
@@ -382,7 +670,7 @@
 
 
 
-<!-- Footer ============================================================================ -->
+    <!-- Footer ============================================================================ -->
     <div class="footer">
         <div class="container">
             <div class="row">
@@ -399,8 +687,8 @@
 
 
 
-	<!-- toTOP按鈕 -->
-	<div class="toTop"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
+    <!-- toTOP按鈕 -->
+    <div class="toTop"><i class="fa fa-angle-up" aria-hidden="true"></i></div>
 
 
 
@@ -408,15 +696,15 @@
 
 
 
-<!-- 燈箱 ============================================================================ -->
-	<div class="modal fade" id="myModal" tabindex="-1">
-		<div class="modal-dialog modal-lg">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h2 class="modal-title">職缺內容</h2>
-				</div>
-				<div class="modal-body">
+    <!-- 燈箱 ============================================================================ -->
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">職缺內容</h2>
+                </div>
+                <div class="modal-body">
                     <table class="table table-striped myJob">
                         <tbody>
                             <tr>
@@ -425,7 +713,9 @@
                             </tr>
                             <tr>
                                 <th>公司簡介</th>
-                                <td colspan="5">低價經濟增強某些晶片節目好像商標上網生成，只見適當當前位置團體玄幻簽名，連載一點國產等待除了壓縮網通創新採，太陽加油正好聯繫附近配合衝，同樣地上臨床原理有一自治區之處簡直三大生物權益適應判斷，直到尤其是內存的確取得因此戰略此處黑色當然正文監控面，這樣選擇她說外貿性格你看體會笑着分別多媒體，生成版本控制一生當前唱片身子處罰發，存在要在引導手機主頁一年總經理報紙是什麼意識觀察榮譽照片打電，大人一對你。</td>
+                                <td colspan="5">
+                                    低價經濟增強某些晶片節目好像商標上網生成，只見適當當前位置團體玄幻簽名，連載一點國產等待除了壓縮網通創新採，太陽加油正好聯繫附近配合衝，同樣地上臨床原理有一自治區之處簡直三大生物權益適應判斷，直到尤其是內存的確取得因此戰略此處黑色當然正文監控面，這樣選擇她說外貿性格你看體會笑着分別多媒體，生成版本控制一生當前唱片身子處罰發，存在要在引導手機主頁一年總經理報紙是什麼意識觀察榮譽照片打電，大人一對你。
+                                </td>
                             </tr>
                             <tr>
                                 <th>職務名稱</th>
@@ -463,13 +753,13 @@
                             </tr>
                         </tbody>
                     </table>
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
-				</div>
-			</div>
-		</div>
-	</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">關閉視窗</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -494,18 +784,19 @@
 
 
 
-	<!-- jQuery -->
-	<script src="js/jquery-1.12.4.min.js"></script>
-	<!-- Bootstrap JS -->
-	<script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-	<!-- My JS -->
-	<script src="js/my.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- My JS -->
+    <script src="js/my.js"></script>
 
-	<!-- 增加手機上的滑動功能 -->
-	<script src="assets/bootstrap-3.3.7-dist/js/jqm-even-touch/jquery.mobile.custom.min.js"></script>
-	<script src="assets/bootstrap-3.3.7-dist/js/carousel_swipe.js"></script>
+    <!-- 增加手機上的滑動功能 -->
+    <script src="assets/bootstrap-3.3.7-dist/js/jqm-even-touch/jquery.mobile.custom.min.js"></script>
+    <script src="assets/bootstrap-3.3.7-dist/js/carousel_swipe.js"></script>
 
 
 
 </body>
+
 </html>

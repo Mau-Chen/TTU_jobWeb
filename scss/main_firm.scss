@@ -10,7 +10,7 @@
 
 
 
-/*-- index --------------------------------------*/
+/*-- firmIndex --------------------------------------*/
 
 .allWrapper.firmIndex {
 
@@ -91,7 +91,7 @@
 
 /*-- JobIndex -----------------------------------*/
 
-.Jobs {
+.allWrapper.Jobs {
     h1 {
         letter-spacing: .1em;
         color: $TitleGreen;
@@ -106,7 +106,7 @@
         }
     }
 
-    // -- 標籤面板-標籤區 --
+    // -- 職缺列表-標籤區 --
     .nav-tabs {
         .nav-item {
             button {
@@ -132,7 +132,7 @@
         }
     }
 
-    // -- 標籤面板-內容區 --
+    // -- 職缺列表-內容區 --
     .tab-pane {
         .table {
             // border: 1px solid $TitleYellow;
@@ -160,9 +160,11 @@
                 .endDate {
                     font-size: 0.8rem;
                 }
-                td{
+
+                td {
                     max-width: 10em;
-                    &.jobTitle{
+
+                    &.jobTitle {
                         max-width: 7em;
                     }
                 }
@@ -172,55 +174,48 @@
 
         }
     }
+
 }
 
+// -- 職缺列表-燈箱區 --
+#jobDetialModal {
+    .jobTable {
 
-.Jobs table tbody tr td {
-    // color: #333;
-    // text-align: center;
+        .row {
+            border-bottom: 1px solid $Gray-2;
+            margin-bottom: 1em;
+
+            @media (max-width: 992px) {
+                border-bottom: 0;
+                .lightBoxLabel{
+                    text-align: start;
+                }
+
+                .lightBoxItems {
+                    border-bottom: 1px solid $Gray-2;
+                    padding-left: 2em;
+                }
+            }
+        }
+
+        .lightBoxLabel {
+            padding: .5em;
+            color: $TitleYellow;
+            letter-spacing: .3em;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1.2em;
+        }
+        .lightBoxItems{
+            padding: .5em;
+            letter-spacing: .06em;
+        }
+    }
+
 }
 
-.Jobs table tbody tr td.text-right {
-    // text-align: right;
-}
+/*-- JobCreate -----------------------------------*/
+.allWrapper.JobCreate{
 
-select {
-    // padding: 5px;
-}
-
-.mb30 {
-    // margin-bottom: 30px;
-}
-
-.myInput>input.form-control {
-    // display: inline-block;
-    // width: auto;
-}
-
-/*-- 廠商職缺公告 --*/
-.tab-pane {
-    padding-top: 20px;
-}
-
-.nav-tabs li a {
-    color: #4F804D;
-}
-
-.nav-tabs li.active a:focus {
-    color: #fff;
-    background-color: #CCB67A;
-}
-
-/*-- 燈箱 --------------------------------------*/
-.modal-header h2 {
-    font-size: 1.6em;
-    line-height: 2em;
-    color: #4F804D;
-    text-align: center;
-}
-
-.myJob th {
-    color: #CCB67A;
-    width: 5em;
-    padding: 0 10px;
+    
 }

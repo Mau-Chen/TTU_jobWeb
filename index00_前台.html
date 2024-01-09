@@ -103,16 +103,16 @@
 
 
 	<!-- 職缺公告欄 ===================================================================-->
-	<div class="Jobs mb30">
+	<div class="Jobs">
 		<div class="container allWrapper">
 			<div class="row">
 				<div class="col-sm-12 text-center">
 					<h1>育成廠商職缺公告<small>(依學系分類)</small></h1>
 					<!-- 標籤面板-標籤區 -->
-					<ul class="nav nav-tabs" role="tablist">
+					<ul class="nav nav-tabs align-middle" role="tablist">
 						<li class="nav-item" role="presentation">
-							<button type="button" data-bs-target="#tabA" data-bs-toggle="tab" class="nav-link active"
-								role="tab" aria-controls="tabA" aria-selected="true" id="tabA-tab">全部</button>
+							<button type="button" data-bs-target="#tabA" data-bs-toggle="tab" class="nav-link active all"
+								role="tab" aria-controls="tabA" aria-selected="true" id="tabA-tab">全部</span></button>
 						</li>
 						<li class="nav-item" role="presentation">
 							<button type="button" data-bs-target="#tabB" data-bs-toggle="tab" class="nav-link"
@@ -141,206 +141,206 @@
 						<!-- 標籤面板-內容區1全部 -->
 						<div role="tabpanel" class="tab-pane fade show active" id="tabA" role="tabpanel"
 							aria-labelledby="tabA-tab" tabindex="0">
-							<table class="table">
-								<thead>
+							<table class="table table-hover table-bordered align-middle">
+								<thead class="text-center align-middle">
 									<tr>
-										<th>上架日期</th>
-										<th>公司名稱</th>
-										<th>職務名稱</th>
-										<th>工作性質</th>
-										<th>工作時間</th>
-										<th>下架日期</th>
-										<th>詳細內容</th>
+										<th scope="col">上架日期</th>
+										<th scope="col">公司名稱</th>
+										<th scope="col">工作性質</th>
+										<th scope="col">職務名稱</th>
+										<th scope="col">工作時間</th>
+										<th scope="col">截止日期</th>
+										<th scope="col">詳情</th>
 									</tr>
 								</thead>
-								<tbody>
+								<tbody class="text-center">
 									<tr>
-										<td>2022/10/21</td>
-										<td>包山包海工程股份有限公司</td>
-										<td>電機工程師</td>
+										<td class="startDate">2022/10/21</td>
+										<td class="text-truncate">包山包海工程股份有限公司</td>
+										<td class="jobTitle text-truncate">電機工程師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/21</td>
-										<td>包山包海工程股份有限公司</td>
-										<td>光電工程師</td>
+										<td class="startDate">2022/10/21</td>
+										<td class="text-truncate">包山包海工程股份有限公司</td>
+										<td class="jobTitle text-truncate">光電工程師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/21</td>
-										<td>包山包海工程股份有限公司</td>
-										<td>軟體工程師</td>
+										<td class="startDate">2022/10/21</td>
+										<td class="text-truncate">包山包海工程股份有限公司</td>
+										<td class="jobTitle text-truncate">軟體工程師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/21</td>
-										<td>包山包海工程股份有限公司</td>
-										<td>製造工程技師</td>
+										<td class="startDate">2022/10/21</td>
+										<td class="text-truncate">包山包海工程股份有限公司</td>
+										<td class="jobTitle text-truncate">製造工程技師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/20</td>
-										<td>發大財銀行</td>
-										<td>金融研究人員</td>
+										<td class="startDate">2022/10/20</td>
+										<td class="text-truncate">發大財銀行</td>
+										<td class="jobTitle text-truncate">金融研究人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/20</td>
-										<td>發大財銀行</td>
-										<td>銀行辦事人員</td>
+										<td class="startDate">2022/10/20</td>
+										<td class="text-truncate">發大財銀行</td>
+										<td class="jobTitle text-truncate">銀行辦事人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/20</td>
-										<td>發大財銀行</td>
-										<td>財務／會計助理</td>
+										<td class="startDate">2022/10/20</td>
+										<td class="text-truncate">發大財銀行</td>
+										<td class="jobTitle text-truncate">財務／會計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/19</td>
+										<td class="startDate">2022/10/19</td>
+										<td class="text-truncate">襄民文化出版社</td>
+										<td class="jobTitle text-truncate">口譯人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td class="endDate">2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td class="startDate">2022/10/19</td>
+										<td class="text-truncate">襄民文化出版社</td>
+										<td class="jobTitle text-truncate">教材編輯人員</td>
+										<td>工讀</td>
+										<td>日班</td>
+										<td class="endDate">2022/11/30</td>
+										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
+									</tr>
+									<tr>
+										<td class="startDate">2022/10/19</td>
 										<td>襄民文化出版社</td>
-										<td>口譯人員</td>
+										<td class="jobTitle text-truncate">語文補習班老師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/19</td>
+										<td class="startDate">2022/10/19</td>
 										<td>襄民文化出版社</td>
-										<td>教材編輯人員</td>
+										<td class="jobTitle text-truncate">技術文件／說明書編譯</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/19</td>
-										<td>襄民文化出版社</td>
-										<td>語文補習班老師</td>
-										<td>工讀</td>
-										<td>日班</td>
-										<td>2022/11/30</td>
-										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
-												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
-									</tr>
-									<tr>
-										<td>2022/10/19</td>
-										<td>襄民文化出版社</td>
-										<td>技術文件／說明書編譯</td>
-										<td>工讀</td>
-										<td>日班</td>
-										<td>2022/11/30</td>
-										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
-												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
-									</tr>
-									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>平面設計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>服裝設計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>多媒體動畫設計師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>工業設計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>包裝設計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><a class="btn btn-default" href="javascript:;" role="button"><i
 													class="fa fa-search"></i></a></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>高明醫療器材公司</td>
 										<td>行政人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/17</td>
+										<td class="startDate">2022/10/17</td>
 										<td>高明醫療器材公司</td>
 										<td>助理研究人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/16</td>
+										<td class="startDate">2022/10/16</td>
 										<td>高明醫療器材公司</td>
 										<td>秘書</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
@@ -350,56 +350,56 @@
 						<!-- 標籤面板-內容區2工程學系 -->
 						<div role="tabpanel" class="tab-pane fade" id="tabB" role="tabpanel" aria-labelledby="tabB-tab"
 							tabindex="0">
-							<table class="table">
-								<thead>
+							<table class="table table-hover table-bordered align-middle">
+								<thead class="text-center align-middle">
 									<tr>
-										<th>上架日期</th>
-										<th>公司名稱</th>
-										<th>職務名稱</th>
-										<th>工作性質</th>
-										<th>工作時間</th>
-										<th>下架日期</th>
-										<th>詳細內容</th>
+										<th scope="col">上架日期</th>
+										<th scope="col">公司名稱</th>
+										<th scope="col">工作性質</th>
+										<th scope="col">職務名稱</th>
+										<th scope="col">工作時間</th>
+										<th scope="col">截止日期</th>
+										<th scope="col">詳情</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>2022/10/21</td>
+										<td class="startDate">2022/10/21</td>
 										<td>包山包海工程股份有限公司</td>
 										<td>電機工程師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/21</td>
+										<td class="startDate">2022/10/21</td>
 										<td>包山包海工程股份有限公司</td>
 										<td>光電工程師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/21</td>
+										<td class="startDate">2022/10/21</td>
 										<td>包山包海工程股份有限公司</td>
 										<td>軟體工程師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/21</td>
+										<td class="startDate">2022/10/21</td>
 										<td>包山包海工程股份有限公司</td>
 										<td>製造工程技師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
@@ -409,46 +409,46 @@
 						<!-- 標籤面板-內容區3經營學系 -->
 						<div role="tabpanel" class="tab-pane fade" id="tabC" role="tabpanel" aria-labelledby="tabC-tab"
 							tabindex="0">
-							<table class="table">
-								<thead>
+							<table class="table table-hover table-bordered align-middle">
+								<thead class="text-center align-middle">
 									<tr>
-										<th>上架日期</th>
-										<th>公司名稱</th>
-										<th>職務名稱</th>
-										<th>工作性質</th>
-										<th>工作時間</th>
-										<th>下架日期</th>
-										<th>詳細內容</th>
+										<th scope="col">上架日期</th>
+										<th scope="col">公司名稱</th>
+										<th scope="col">工作性質</th>
+										<th scope="col">職務名稱</th>
+										<th scope="col">工作時間</th>
+										<th scope="col">截止日期</th>
+										<th scope="col">詳情</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>2022/10/20</td>
+										<td class="startDate">2022/10/20</td>
 										<td>發大財銀行</td>
 										<td>金融研究人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/20</td>
+										<td class="startDate">2022/10/20</td>
 										<td>發大財銀行</td>
 										<td>銀行辦事人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/20</td>
+										<td class="startDate">2022/10/20</td>
 										<td>發大財銀行</td>
 										<td>財務／會計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
@@ -458,66 +458,66 @@
 						<!-- 標籤面板-內容區4設計學系 -->
 						<div role="tabpanel" class="tab-pane fade" id="tabD" role="tabpanel" aria-labelledby="tabD-tab"
 							tabindex="0">
-							<table class="table">
-								<thead>
+							<table class="table table-hover table-bordered align-middle">
+								<thead class="text-center align-middle">
 									<tr>
-										<th>上架日期</th>
-										<th>公司名稱</th>
-										<th>職務名稱</th>
-										<th>工作性質</th>
-										<th>工作時間</th>
-										<th>下架日期</th>
-										<th>詳細內容</th>
+										<th scope="col">上架日期</th>
+										<th scope="col">公司名稱</th>
+										<th scope="col">工作性質</th>
+										<th scope="col">職務名稱</th>
+										<th scope="col">工作時間</th>
+										<th scope="col">截止日期</th>
+										<th scope="col">詳情</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>平面設計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>服裝設計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>多媒體動畫設計師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>工業設計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>創意有限公司</td>
 										<td>包裝設計助理</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><a class="btn btn-default" href="javascript:;" role="button"><i
 													class="fa fa-search"></i></a></td>
 									</tr>
@@ -527,56 +527,56 @@
 						<!-- 標籤面板-內容區5 -->
 						<div role="tabpanel" class="tab-pane fade" id="tabE" role="tabpanel" aria-labelledby="tabE-tab"
 							tabindex="0">
-							<table class="table">
-								<thead>
+							<table class="table table-hover table-bordered align-middle">
+								<thead class="text-center align-middle">
 									<tr>
-										<th>上架日期</th>
-										<th>公司名稱</th>
-										<th>職務名稱</th>
-										<th>工作性質</th>
-										<th>工作時間</th>
-										<th>下架日期</th>
-										<th>詳細內容</th>
+										<th scope="col">上架日期</th>
+										<th scope="col">公司名稱</th>
+										<th scope="col">工作性質</th>
+										<th scope="col">職務名稱</th>
+										<th scope="col">工作時間</th>
+										<th scope="col">截止日期</th>
+										<th scope="col">詳情</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>2022/10/19</td>
+										<td class="startDate">2022/10/19</td>
 										<td>襄民文化出版社</td>
 										<td>口譯人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/19</td>
+										<td class="startDate">2022/10/19</td>
 										<td>襄民文化出版社</td>
 										<td>教材編輯人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/19</td>
+										<td class="startDate">2022/10/19</td>
 										<td>襄民文化出版社</td>
 										<td>語文補習班老師</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/19</td>
+										<td class="startDate">2022/10/19</td>
 										<td>襄民文化出版社</td>
 										<td>技術文件／說明書編譯</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
@@ -586,56 +586,52 @@
 						<!-- 標籤面板-內容區6 -->
 						<div role="tabpanel" class="tab-pane fade" id="tabF" role="tabpanel" aria-labelledby="tabF-tab"
 							tabindex="0">
-							<table class="table">
-								<thead>
+							<table class="table table-hover table-bordered align-middle">
+								<thead class="text-center align-middle">
 									<tr>
-										<th>上架日期</th>
-										<th>公司名稱</th>
-										<th>職務名稱</th>
-										<th>工作性質</th>
-										<th>工作時間</th>
-										<th>下架日期</th>
-										<th>詳細內容</th>
+										<th scope="col">上架日期</th>
+										<th scope="col">公司名稱</th>
+										<th scope="col">工作性質</th>
+										<th scope="col">職務名稱</th>
+										<th scope="col">工作時間</th>
+										<th scope="col">截止日期</th>
+										<th scope="col">詳情</th>
 									</tr>
 								</thead>
 								<tbody>
 									<tr>
-										<td>2022/10/18</td>
+										<td class="startDate">2022/10/18</td>
 										<td>高明醫療器材公司</td>
 										<td>行政人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/17</td>
+										<td class="startDate">2022/10/17</td>
 										<td>高明醫療器材公司</td>
 										<td>助理研究人員</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 									<tr>
-										<td>2022/10/16</td>
+										<td class="startDate">2022/10/16</td>
 										<td>高明醫療器材公司</td>
 										<td>秘書</td>
 										<td>工讀</td>
 										<td>日班</td>
-										<td>2022/11/30</td>
+										<td class="endDate">2022/11/30</td>
 										<td><button type="button" class="btn btn-default" data-bs-toggle="modal"
 												data-bs-target="#myModal"><i class="fa fa-search"></i></button></td>
 									</tr>
 								</tbody>
 							</table>
 						</div>
-
-
-
-
 					</div><!-- .tab-content end -->
 
 				</div><!-- .col-sm-12 -->
@@ -728,7 +724,7 @@
 								<th>工作地點</th>
 								<td colspan="3">老闆家</td>
 								<th>下架日期</th>
-								<td>2022/11/30</td>
+								<td class="endDate">2022/11/30</td>
 							</tr>
 						</tbody>
 					</table>

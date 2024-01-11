@@ -8,9 +8,42 @@ $White: #F5F5F5;
 $ttuRed: #D93C2D;
 $SecondGreen: #0B6D61;
 $Gray-2: #cccccc;
+$DarkRed: #bb2d3b;
 
 //改Bootstrap顏色設定
 .form-check-input:checked {
     background-color: $SecondGreen;
     border-color: $SecondGreen;
+}
+
+.btn-danger {
+    background-color: $DarkRed;
+
+    &:hover {
+        background-color: $Error;
+    }
+}
+
+.btn-success {
+    background-color: $TitleGreen;
+    border-color: $TitleGreen;
+
+
+    &:hover {
+        background-color: $SecondGreen;
+        border-color: $SecondGreen;
+    }
+
+    &:active {}
+}
+
+.btn-check:checked+.btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check)+.btn:active {
+    // background-color: $SecondGreen;
+    background-color: $TitleYellow;
+    border-color: $TitleYellow;
+
 }

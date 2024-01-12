@@ -158,14 +158,16 @@
                         <div class="col-lg-8">
                             <select class="form-control form-select" id="jobDepartment">
                                 <option selected>--- 請選擇 ---</option>
-                                <option value="">無</option>
-                                <option value="">電子</option>
-                                <option value="">機械</option>
-                                <option value="">化工</option>
-                                <option value="">會計</option>
-                                <option value="">資管</option>
-                                <option value="">工業設計</option>
-                                <option value="">語文</option>
+                                <option value="不限學系">不限學系</option>
+                                <option value="機械與材料工程學系">機械與材料工程學系</option>
+                                <option value="化學工程與生物科技學系">化學工程與生物科技學系</option>
+                                <option value="電機工程學系">電機工程學系</option>
+                                <option value="資訊工程學系">資訊工程學系</option>
+                                <option value="事業經營學系">事業經營學系</option>
+                                <option value="資訊經營學系">資訊經營學系</option>
+                                <option value="工業設計學系">工業設計學系</option>
+                                <option value="媒體設計學系">媒體設計學系</option>
+                                <option value="應用外語學系">應用外語學系</option>
                             </select>
                         </div>
                     </div>
@@ -306,10 +308,18 @@
                         </div>
                         <div class="col-lg-8">
                             <select class="form-control form-select" id="jobSalary">
-                                <option>月薪</option>
-                                <option>日薪</option>
+                                <option selected>--- 請選擇 ---</option>
                                 <option>時薪</option>
+                                <!-- 元 -->
+                                <option>日薪</option>
+                                <!-- 元 -->
+                                <option>月薪</option>
+                                <!-- 元 -->
+                                <!-- 元 至 元-->
+                                <!-- 元以上 -->
+                                <!-- 面議 元以上 -->
                                 <option>按件計酬</option>
+                                <!-- 元/件 -->
                             </select>
                         </div>
                     </div>
@@ -475,7 +485,7 @@
 
 
     <!-- 燈箱 ============================================================================ -->
-    <div class="modal fade modal-xl lightBox" id="myJobModal" data-bs-backdrop="static" data-bs-keyboard="false"
+    <div class="modal fade modal-xl jobLightBox" id="myJobModal" data-bs-backdrop="static" data-bs-keyboard="false"
         tabindex="-1" aria-hidden="true" aria-labelledby="jobDetialLabel">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content rounded-5 p-0">

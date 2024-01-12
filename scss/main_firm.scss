@@ -178,7 +178,7 @@
 }
 
 // -- 職缺列表-燈箱區 --
-#jobDetialModal,#myJobModal {
+.jobLightBox {
     .jobTable {
 
         .row {
@@ -211,6 +211,7 @@
         .lightBoxItems {
             padding: .5em;
             letter-spacing: .06em;
+            text-align: start;
         }
     }
 

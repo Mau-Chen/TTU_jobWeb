@@ -107,7 +107,7 @@
 
     <!-- 職缺登錄 ========================================================================================= -->
     <div class="container allWrapper CreateJob">
-        <div class="container-fluid">
+        <form class="container-fluid">
             <div class="row p-4">
                 <div class="col-lg-12 text-center">
                     <h1 class="m-0">職缺登錄</h1>
@@ -129,7 +129,7 @@
                         </div>
                         <div class="col-lg-8">
                             <select class="form-control form-select" id="jobEmployment">
-                                <option selected>--- 請選擇 ---</option>
+                                <option selected disabled>--- 請選擇 ---</option>
                                 <option value="1">全職</option>
                                 <option value="2">工讀</option>
                             </select>
@@ -157,17 +157,25 @@
                         </div>
                         <div class="col-lg-8">
                             <select class="form-control form-select" id="jobDepartment">
-                                <option selected>--- 請選擇 ---</option>
+                                <option selected disabled>--- 請選擇 ---</option>
                                 <option value="不限學系">不限學系</option>
+                                <optgroup label="工程學院">
                                 <option value="機械與材料工程學系">機械與材料工程學系</option>
                                 <option value="化學工程與生物科技學系">化學工程與生物科技學系</option>
                                 <option value="電機工程學系">電機工程學系</option>
                                 <option value="資訊工程學系">資訊工程學系</option>
+                                </optgroup>
+                                <optgroup label="經營學院">
                                 <option value="事業經營學系">事業經營學系</option>
                                 <option value="資訊經營學系">資訊經營學系</option>
+                                </optgroup>
+                                <optgroup label="設計學院">
                                 <option value="工業設計學系">工業設計學系</option>
                                 <option value="媒體設計學系">媒體設計學系</option>
+                                </optgroup>
+                                <optgroup label="國際學院">
                                 <option value="應用外語學系">應用外語學系</option>
+                                </optgroup>
                             </select>
                         </div>
                     </div>
@@ -374,7 +382,7 @@
                     <button type="button" class="btn btn-lg btn-success">送出</button>
                 </div>
             </div>
-        </div>
+        </ㄑ>
 
         <hr /><!-- 我是一條線 -->
 

@@ -229,12 +229,22 @@
             color: $TitleGreen;
             font-weight: 700;
         }
+
+        select {
+            option {
+                color: $TitleGreen;
+            }
+
+            optgroup {
+                color: $TitleYellow;
+            }
+        }
     }
 
     // =========================待處裡==========================
-    input[type="time"]{
+    input[type="time"] {
         // width: 68.5%;
-    } 
+    }
 
     // =========================待處裡==========================
 
@@ -257,10 +267,10 @@
     }
 
     .CreateJobFormFooter {
-        button{
+        button {
             letter-spacing: .2em;
         }
-        
+
     }
 
 

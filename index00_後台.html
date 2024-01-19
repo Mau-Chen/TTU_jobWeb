@@ -57,7 +57,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 text-center">
                             <li class="nav-item">
-                                <a class="nav-link" aria-current="page" href="#">瀏覽職缺</a>
+                                <a class="nav-link" aria-current="page" href="./index00_前台.html">瀏覽職缺</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./index00_後台.html">職缺登錄</a>
@@ -160,21 +160,21 @@
                                 <option selected disabled>--- 請選擇 ---</option>
                                 <option value="不限學系">不限學系</option>
                                 <optgroup label="工程學院">
-                                <option value="機械與材料工程學系">機械與材料工程學系</option>
-                                <option value="化學工程與生物科技學系">化學工程與生物科技學系</option>
-                                <option value="電機工程學系">電機工程學系</option>
-                                <option value="資訊工程學系">資訊工程學系</option>
+                                    <option value="機械與材料工程學系">機械與材料工程學系</option>
+                                    <option value="化學工程與生物科技學系">化學工程與生物科技學系</option>
+                                    <option value="電機工程學系">電機工程學系</option>
+                                    <option value="資訊工程學系">資訊工程學系</option>
                                 </optgroup>
                                 <optgroup label="經營學院">
-                                <option value="事業經營學系">事業經營學系</option>
-                                <option value="資訊經營學系">資訊經營學系</option>
+                                    <option value="事業經營學系">事業經營學系</option>
+                                    <option value="資訊經營學系">資訊經營學系</option>
                                 </optgroup>
                                 <optgroup label="設計學院">
-                                <option value="工業設計學系">工業設計學系</option>
-                                <option value="媒體設計學系">媒體設計學系</option>
+                                    <option value="工業設計學系">工業設計學系</option>
+                                    <option value="媒體設計學系">媒體設計學系</option>
                                 </optgroup>
                                 <optgroup label="國際學院">
-                                <option value="應用外語學系">應用外語學系</option>
+                                    <option value="應用外語學系">應用外語學系</option>
                                 </optgroup>
                             </select>
                         </div>
@@ -189,10 +189,10 @@
                             <div class="row">
                                 <div class="col-lg-12 input-group mb-3 flex-nowrap">
                                     <!-- <div class="input-group mb-3"> -->
-                                        <span class="input-group-text">自</span>
-                                        <input type="time" class="text-center">
-                                        <span class="input-group-text">起</span>
-                                        <!-- <span class="input-group-text">自</span>
+                                    <span class="input-group-text">自</span>
+                                    <input type="time" class="text-center">
+                                    <span class="input-group-text">起</span>
+                                    <!-- <span class="input-group-text">自</span>
                                         <select class="form-control form-select" id="startHour">
                                             <option selected>--- 請選擇 ---</option>
                                             <option value="">07時</option>
@@ -272,9 +272,9 @@
                             <div class="row">
                                 <div class="col-lg-12 input-group mb-3 flex-nowrap">
                                     <!-- <div class="input-group mb-3"> -->
-                                        <span class="input-group-text">至</span>
-                                        <input type="time" class="text-center">
-                                        <span class="input-group-text">止</span>
+                                    <span class="input-group-text">至</span>
+                                    <input type="time" class="text-center">
+                                    <span class="input-group-text">止</span>
                                     <!-- </div> -->
                                 </div>
                             </div>
@@ -333,41 +333,40 @@
                     </div>
                     <div class="row salaryRadio mb-3">
                         <div class="col-lg-12">
-                            <label for="optionsRadios1" class="input-group mb-2">
-                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-                                <input type="text" class="form-control exampleInputAmount" id="exampleInputAmount"
-                                    placeholder="NTD">
-                                <div class="input-group-addon">元至</div>
-                                <input type="text" class="form-control exampleInputAmount" id="exampleInputAmount"
-                                    placeholder="NTD">
-                                <div class="input-group-addon">元</div>
-
+                            <label for="optionsRadios1" class="input-group mb-2 salaryLabel" id="dollars">
+                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="元" checked
+                                    asp-for="JobSalaryType">
+                                <input type="text" class="form-control exampleInputAmount rounded-2" placeholder="NTD">
+                                <span class="input-group-addon">元</span>
                             </label>
-                            <label for="optionsRadios2" class="input-group mb-2">
-                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-                                <input type="text" class="form-control exampleInputAmount" id="exampleInputAmount"
-                                    placeholder="NTD">
-                                <div class="input-group-addon">元</div>
-
+                            <label for="optionsRadios2" class="input-group mb-2 salaryLabel" asp-for="JobSalaryType" id="dollarsToDollars">
+                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="元至元" asp-for="JobSalaryType">
+                                <input type="text" class="form-control exampleInputAmount rounded-2" placeholder="NTD">
+                                <span class="input-group-addon">元至</span>
+                                <input type="text" class="form-control exampleInputAmount rounded-2" placeholder="NTD">
+                                <span class="input-group-addon">元</span>
                             </label>
-                            <label for="optionsRadios3" class="input-group mb-2">
-                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">
-                                <input type="text" class="form-control exampleInputAmount" id="exampleInputAmount"
-                                    placeholder="NTD">
-                                <div class="input-group-addon">元以上</div>
+                            <label for="optionsRadios3" class="input-group mb-2 salaryLabel" id="moreThenDollars">
+                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="元以上" asp-for="JobSalaryType">
+                                <input type="text" class="form-control exampleInputAmount rounded-2" placeholder="NTD">
+                                <span class="input-group-addon">元以上</span>
                             </label>
-                            <label for="optionsRadios4" class="input-group mb-2">
-                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="option4">
-                                <div class="input-group-addon">面議</div>
-                                <input type="text" class="form-control exampleInputAmount" id="exampleInputAmount"
-                                    placeholder="NTD">
-                                <div class="input-group-addon">元以上</div>
+                            <label for="optionsRadios4" class="input-group mb-2 salaryLabel" id="negotiable">
+                                <input type="radio" name="optionsRadios" id="optionsRadios4" value="面議" asp-for="JobSalaryType">
+                                <span class="input-group-addon">面議</span>
+                                <input type="text" class="form-control exampleInputAmount rounded-2" placeholder="NTD">
+                                <span class="input-group-addon">元以上</span>
+                            </label>
+                            <label for="optionsRadios5" class="input-group mb-2 salaryLabel" id="dollarsPerCase">
+                                <input type="radio" name="optionsRadios" id="optionsRadios5" value="件" asp-for="JobSalaryType">
+                                <input type="text" class="form-control exampleInputAmount rounded-2"  placeholder="NTD">
+                                <span class="input-group-addon">元/件</span>
                             </label>
                         </div>
                     </div>
                     <div class="row mb-3">
                         <div class="col-lg-4">
-                            <label for="jobRemoveDate" class="col-form-label text-nowrap">下架日期：</label>
+                            <label for="jobRemoveDate" class="col-form-label text-nowrap">截止日期：</label>
                         </div>
                         <div class="col-lg-8">
                             <input name="" type="date" value="" id="jobRemoveDate" class="form-control">
@@ -382,91 +381,92 @@
                     <button type="button" class="btn btn-lg btn-success">送出</button>
                 </div>
             </div>
-        </ㄑ>
+            </ㄑ>
 
-        <hr /><!-- 我是一條線 -->
+            <hr /><!-- 我是一條線 -->
 
-        <!-- 已登錄職缺 ===================================================================-->
-        <div class="Jobs mb30">
-            <div class="container px-5 pb-5">
-                <div class="row text-center">
-                    <h1 class="p-3">已登錄職缺
-                        <button type="button" class="btn btn-danger"><i class="fa fa-trash-o" aria-hidden="true"></i>
-                            刪除</button>
-                    </h1>
+            <!-- 已登錄職缺 ===================================================================-->
+            <div class="Jobs mb30">
+                <div class="container px-5 pb-5">
+                    <div class="row text-center">
+                        <h1 class="p-3">已登錄職缺
+                            <button type="button" class="btn btn-danger"><i class="fa fa-trash-o"
+                                    aria-hidden="true"></i>
+                                刪除</button>
+                        </h1>
 
-                    <div class="col-sm-12 pb-5">
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>選取</th>
-                                    <th>上架日期</th>
-                                    <th>職務名稱</th>
-                                    <th>工作性質</th>
-                                    <th>工作時間</th>
-                                    <th>下架日期</th>
-                                    <th>詳細內容</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td><label><input type="checkbox"></label></td>
-                                    <td>2022/10/20</td>
-                                    <td>平面設計助理</td>
-                                    <td>工讀</td>
-                                    <td>日班</td>
-                                    <td>2022/11/30</td>
-                                    <td><button type="button" class="btn btn-default" data-bs-toggle="modal"
-                                            data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="checkbox"></label></td>
-                                    <td>2022/10/20</td>
-                                    <td>平面設計助理</td>
-                                    <td>工讀</td>
-                                    <td>日班</td>
-                                    <td>2022/11/30</td>
-                                    <td><button type="button" class="btn btn-default" data-bs-toggle="modal"
-                                            data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="checkbox"></label></td>
-                                    <td>2022/10/20</td>
-                                    <td>平面設計助理</td>
-                                    <td>工讀</td>
-                                    <td>日班</td>
-                                    <td>2022/11/30</td>
-                                    <td><button type="button" class="btn btn-default" data-bs-toggle="modal"
-                                            data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="checkbox"></label></td>
-                                    <td>2022/10/20</td>
-                                    <td>平面設計助理</td>
-                                    <td>工讀</td>
-                                    <td>日班</td>
-                                    <td>2022/11/30</td>
-                                    <td><button type="button" class="btn btn-default" data-toggle="modal"
-                                            data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
-                                </tr>
-                                <tr>
-                                    <td><label><input type="checkbox"></label></td>
-                                    <td>2022/10/20</td>
-                                    <td>平面設計助理</td>
-                                    <td>工讀</td>
-                                    <td>日班</td>
-                                    <td>2022/11/30</td>
-                                    <td><button type="button" class="btn btn-default" data-toggle="modal"
-                                            data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
-                                    <!-- <td><a class="btn btn-default" href="javascript:;" role="button"><i
+                        <div class="col-sm-12 pb-5">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>選取</th>
+                                        <th>上架日期</th>
+                                        <th>職務名稱</th>
+                                        <th>工作性質</th>
+                                        <th>工作時間</th>
+                                        <th>下架日期</th>
+                                        <th>詳細內容</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><label><input type="checkbox"></label></td>
+                                        <td>2022/10/20</td>
+                                        <td>平面設計助理</td>
+                                        <td>工讀</td>
+                                        <td>日班</td>
+                                        <td>2022/11/30</td>
+                                        <td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+                                                data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label><input type="checkbox"></label></td>
+                                        <td>2022/10/20</td>
+                                        <td>平面設計助理</td>
+                                        <td>工讀</td>
+                                        <td>日班</td>
+                                        <td>2022/11/30</td>
+                                        <td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+                                                data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label><input type="checkbox"></label></td>
+                                        <td>2022/10/20</td>
+                                        <td>平面設計助理</td>
+                                        <td>工讀</td>
+                                        <td>日班</td>
+                                        <td>2022/11/30</td>
+                                        <td><button type="button" class="btn btn-default" data-bs-toggle="modal"
+                                                data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label><input type="checkbox"></label></td>
+                                        <td>2022/10/20</td>
+                                        <td>平面設計助理</td>
+                                        <td>工讀</td>
+                                        <td>日班</td>
+                                        <td>2022/11/30</td>
+                                        <td><button type="button" class="btn btn-default" data-toggle="modal"
+                                                data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
+                                    </tr>
+                                    <tr>
+                                        <td><label><input type="checkbox"></label></td>
+                                        <td>2022/10/20</td>
+                                        <td>平面設計助理</td>
+                                        <td>工讀</td>
+                                        <td>日班</td>
+                                        <td>2022/11/30</td>
+                                        <td><button type="button" class="btn btn-default" data-toggle="modal"
+                                                data-bs-target="#myJobModal"><i class="fa fa-search"></i></button></td>
+                                        <!-- <td><a class="btn btn-default" href="javascript:;" role="button"><i
                                                 class="fa fa-search"></i></a></td> -->
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div><!-- .row -->
-            </div><!-- .container -->
-        </div><!-- .Content -->
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><!-- .row -->
+                </div><!-- .container -->
+            </div><!-- .Content -->
 
     </div>
 
@@ -668,16 +668,17 @@
 
 
     <!-- jQuery -->
-    <script src="js/jquery-1.12.4.min.js"></script>
+    <!-- <script src="js/jquery-1.12.4.min.js"></script> -->
+    <script src="./js/jquery-3.7.1.min.js"></script>
     <!-- Bootstrap JS -->
-    <!-- <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script> -->
+    <!-- <script src="assets/bootstrap-3.3.7-dist/js/bootstrap.min.js"></> -->
     <script src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     <!-- My JS -->
-    <script src="js/my.js"></script>
+    <script src="./js/my.js"></script>
 
     <!-- 增加手機上的滑動功能 -->
-    <script src="assets/bootstrap-3.3.7-dist/js/jqm-even-touch/jquery.mobile.custom.min.js"></script>
-    <script src="assets/bootstrap-3.3.7-dist/js/carousel_swipe.js"></script>
+    <!-- <script src="assets/bootstrap-3.3.7-dist/js/jqm-even-touch/jquery.mobile.custom.min.js"></script> -->
+    <!-- <script src="assets/bootstrap-3.3.7-dist/js/carousel_swipe.js"></script> -->
 
 
 

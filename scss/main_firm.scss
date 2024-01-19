@@ -249,14 +249,18 @@
     // =========================待處裡==========================
 
     .salaryRadio {
-        label {
+        .salaryLabel {
+            display: none;
+            &.choose{
+                display: flex;
+            }
+
             input[type="radio"] {
                 width: 1em;
                 margin: .5em;
             }
 
-            #exampleInputAmount {
-                border-radius: 8px;
+            .exampleInputAmount {
                 margin: 0 0.3em;
             }
 

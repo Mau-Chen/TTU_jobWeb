@@ -27,30 +27,32 @@
 <body>
 
         <div class="container login">
-            <form class="row justify-content-center" id="form1" runat="server">
+            <div class="row justify-content-center">
                 <h1 class="webTitle mb-0 mt-lg-5">大同大學校內育成媒合平台</h1>
                 <h2>使用者登入</h2>
 
-                <div class="form-horizontal formBox row justify-content-center">
-
+                <form class="form-horizontal formBox row justify-content-center" id="account" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
                     <div class="form-horizontal formBox row justify-content-center mb-lg-4">
-                        <label for="formGroupInputLarge" class="col-auto col-form-label">帳號</label>
+                        <label class="col-auto col-form-label" for="UserName">帳號</label>
                         <div class="col-lg-7 p-1">
-                            <input type="text" class="form-control">
+                            <input type="text" class="form-control" placeholder="name@example.com" id="UserName">
+                            <span asp-validation-for="UserName" class="text-danger"></span>
                         </div>
                     </div>
 
                     <div class="form-horizontal formBox row justify-content-center mb-lg-4 mb-3">
-                        <label for="formGroupInputLarge" class="col-auto col-form-label">密碼</label>
+                        <label class="col-auto col-form-label" for="Password">密碼</label>
                         <div class="col-lg-7 p-1">
-                            <input type="text" class="form-control">
+                            <input type="password" class="form-control" placeholder="請輸入密碼" id="Password">
+                            <span asp-validation-for="Password" class="text-danger"></span>
                         </div>
                     </div>
 
                     <div class="form-group form-group-lg text-center justify-content-center submitBtn">
-                        <button type="submit" class="btn btn-lg btn-success">登入</button>
+                        <button type="submit" class="btn btn-lg btn-success" id="login-submit">登入</button>
                     </div>
-                </div>
+                </form>
 
                 <div class="row createAccount mt-5 justify-content-center mb-4">
                     <a class="col-auto text-decoration-underline" data-bs-toggle="modal"
@@ -58,7 +60,7 @@
                 </div>
                 <p class="Footer">系統建置單位：大同大學研究發展處<br />系統開發單位：大同大學創新設計與系統整合研究中心<br />建議使用：IE9.0以上版本或Google
                     Chrome瀏覽器<br />(最佳螢幕解析1024*768)</p>
-            </form>
+            </div>
         </div>
 
 

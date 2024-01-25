@@ -33,6 +33,20 @@ body {
         }
     }
 }
+//表格共用
+.table-group-divider{
+    border-top: 2px solid $TitleYellow;
+}
+
+a{
+    text-decoration: none;
+    &:active{
+        text-decoration: none;
+    }
+    &:hover{
+        text-decoration: none;
+    }
+}
 
 /*-- Navbar --------------------------------------*/
 .navbar {

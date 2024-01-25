@@ -110,6 +110,7 @@
     .nav-tabs {
         .nav-item {
             button {
+                font-size: 1.1em;
                 letter-spacing: .1em;
                 color: $TitleGreen;
 
@@ -124,8 +125,8 @@
                 }
 
                 &.active {
-                    color: $Black;
-                    font-weight: 700;
+                    background-color: $TitleYellow;
+                    color: $White;
                 }
 
             }
@@ -135,8 +136,6 @@
     // -- 職缺列表-內容區 --
     .tab-pane {
         .table {
-            // border: 1px solid $TitleYellow;
-            border-color: $TitleYellow;
             font-size: 1em;
 
             @media (max-width: 992px) {
@@ -145,7 +144,7 @@
 
             thead {
                 th {
-                    color: $TitleYellow;
+                    color: $SecondGreen;
                     letter-spacing: .2em;
 
                     @media (max-width: 992px) {
@@ -167,6 +166,20 @@
                     &.jobTitle {
                         max-width: 7em;
                     }
+
+                    button {
+                        width: 1.7em;
+                        padding: 0;
+                        line-height: 1em;
+                        border: 2px solid $Black;
+                        border-radius: 50%;
+                        padding: .1em;
+
+                        i {
+                            
+                            font-size: 1.2em;
+                        }
+                    }
                 }
 
 
@@ -179,6 +192,11 @@
 
 // -- 職缺列表-燈箱區 --
 .jobLightBox {
+    h2{
+        color: $TitleGreen;
+        letter-spacing: 0.8em;
+        font-weight: 700;
+    }
     .jobTable {
 
         .row {
@@ -201,7 +219,7 @@
 
         .lightBoxLabel {
             padding: .5em;
-            color: $TitleYellow;
+            color: $SecondGreen;
             letter-spacing: .3em;
             text-align: center;
             font-weight: 700;
@@ -251,7 +269,8 @@
     .salaryRadio {
         .salaryLabel {
             display: none;
-            &.choose{
+
+            &.choose {
                 display: flex;
             }
 

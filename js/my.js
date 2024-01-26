@@ -67,16 +67,19 @@ document.addEventListener('DOMContentLoaded', function () {
 				removeClass(["choose"], [ 'dollarsPerCase']);
 				document.getElementById('optionsRadios1').checked = true; // #optionsRadios1 增加 checked 屬性
                 break;
-            case '按件計酬':
+				default:
+            // case '按件計酬':
 				addClass(["choose"], ['dollarsPerCase']);
 				removeClass(["choose"], ['dollarsToDollars', 'moreThenDollars', 'negotiable',"dollars" ]);
 				document.getElementById('optionsRadios5').checked = true; // #optionsRadios1 增加 checked 屬性
                 break;
-            default:
-                break;
+            // default:
+                // break;
         }
     });
 });
+
+
 //拼湊薪資區間
 function combineInputs() {
 	// 檢查 optionsRadios2 是否被選中

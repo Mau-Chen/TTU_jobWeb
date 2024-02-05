@@ -1,17 +1,28 @@
 $TitleGreen: #5F755E;
-$Gray: #999;
+$LightGreen:#6B9089;
+$TitleYellow: #D3BD84;
+$DarkYellow: #B5984F;
 $Black: #333;
-// $TitleYellow: #D3BD84;
-$TitleYellow:#ccb67a;
-$DarkYellow: #b5984fdb;
-$Error: #D63900;
-$BackGround: #D6DDD2;
+$DarkGray:#555;
+$Gray: #999;
 $White: #F5F5F5;
+$Gray-2: #E9E9E9;
+$Gray-3: #E0E0E0;
+$BackGround: #D6DED3;
+$Error: #D63900;
 $ttuRed: #D93C2D;
+$DarkRed: #BB2D3B;
 // $SecondGreen: #0B6D61;
+// $TitleYellow:#ccb67a;
 $SecondGreen: #164d46d2;
-$Gray-2: #cccccc;
-$DarkRed: #bb2d3b;
+
+$colorBackground:#f9f9ff;
+$colorPrimary:#242432;
+$colorSecondary:#d8d8ea;
+$colorSecondaryLight:#c0c0de;
+
+
+
 
 //改Bootstrap顏色設定
 .form-check-input:checked {
@@ -36,8 +47,6 @@ $DarkRed: #bb2d3b;
         background-color: $SecondGreen;
         border-color: $SecondGreen;
     }
-
-    &:active {}
 }
 
 .btn-check:checked+.btn,

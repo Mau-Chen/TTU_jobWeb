@@ -23,7 +23,6 @@ body {
             text-indent: -9999px;
             background: transparent url("../img/logo.png") left top no-repeat;
             margin-left: 20px;
-
         }
 
         h2 {
@@ -44,7 +43,8 @@ body {
                 font-weight: 700;
                 font-size: 18px;
             }
-            .submitBtn{
+
+            .submitBtn {
                 font-weight: 700;
             }
         }
@@ -76,26 +76,37 @@ body {
 // ===***燈箱***===
 #newAccount {
     .modal-content {
+
         .modal-body {
-            // overflow-x: hidden;
+
 
             // ==上方提醒
             .remind {
-                a {
-                    color: $TitleGreen;
+                margin: 0 auto;
+                letter-spacing: 0.2em;
+                width: 90%;
+                @media (max-width: 992px) {
+                    letter-spacing: 0.1em;
+                    width: auto;
                 }
-
-                svg {
-                    margin: 0 3px;
-                    font-size: 32px;
-                }
-
                 >p {
                     color: $Error;
                     font-weight: 700;
-                    font-size: 18px;
-                    letter-spacing: 0.2em;
+                    font-size: 1.3em;
                 }
+                div{
+                    p{
+                        font-size: 1.1em;
+                        a {
+                            font-weight: 700;
+                            color: $Black;
+                            display: inline;
+                        }
+                    }
+                }
+
+
+
             }
 
             //申請書填寫範圍
@@ -119,8 +130,14 @@ body {
 
                         //自訂-真正的欄位名稱
                         &.labelTitle {
-                            color: $TitleYellow;
+                            // color: $LightGreen;
+                            // color: $TitleYellow;
+                            color: $TitleGreen;
                             font-weight: 700;
+                            // text-shadow:  0.1em 0.1em 0.2em black;
+                            // text-shadow: -.2px 0 $BackGround, 0 .2px $BackGround, .2px 0 $BackGround, 0 -.2px $BackGround;
+                            // text-shadow: -1px 0 $Gray, 0 1px $Gray, 1px 0 $Gray, 0 -1px $Gray;
+                            // text-shadow: 0px 0px 5px $Gray-3;
                         }
 
                         // 自訂-已顯示選項(區分非欄位名稱)
@@ -198,7 +215,6 @@ body {
                         }
 
                         #helpItems {
-                            // resize: none;
                             height: 100px;
                         }
                     }
@@ -214,28 +230,33 @@ body {
                     .upLoadTitle {
                         letter-spacing: .5rem;
                         font-weight: 700;
-                        font-size: 18px;
+                        font-size: 1.4em;
                         color: $ttuRed;
                     }
-
-                    label {
-                        color: $Black;
-                        letter-spacing: .1em;
-                        cursor: pointer;
-
-                        &:hover {
-                            color: $TitleGreen;
+                    .upLoadItem{
+                        margin-bottom: 10px;
+                        label {
+                            color: $Black;
+                            letter-spacing: .1em;
+                            margin-bottom: 0;
+                            cursor: pointer;
+                            font-size: 1.1em;
+    
+                            &:hover {
+                                color: $TitleGreen;
+                            }
+                        }
+    
+                        input[type="file"] {
+                            display: none;
+                        }
+    
+                        .fileInfo {
+                            color: $Gray;
+                            font-size: 14px;
                         }
                     }
 
-                    input[type="file"] {
-                        display: none;
-                    }
-
-                    .fileInfo {
-                        color: $Gray;
-                        font-size: 14px;
-                    }
                 }
 
             }

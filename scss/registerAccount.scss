@@ -1,0 +1,422 @@
+// @import "color";
+@import "layout";
+
+body {
+    background: $BackGround url("../img/bg.png") left top repeat;
+    margin: 0;
+    padding: 0;
+
+    footer {
+        display: none;
+    }
+
+
+    // ===***登入頁***===
+    .container-fluid.register {
+        // border: 1px solid red;
+        // background-color: rgba(0, 0, 0, .5);
+        background-color: rgba($color: $Black, $alpha: .5);
+        // height: 100%;
+        height: 100Vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container {
+        background-color: white;
+        border: 1px solid $TitleGreen;
+        border-radius: 30px;
+        max-width: 1100px;
+        max-height: 90vh;
+        min-height: 0;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+
+        .form-header {
+            // flex-basis: 40px;
+            flex-basis: 6em;
+            flex-shrink: 0;
+            border-bottom: 1px solid $BackGround;
+
+            h2 {
+                color: $TitleGreen;
+                letter-spacing: 0.8em;
+                font-weight: 700;
+                font-size: 2rem;
+            }
+
+            a {
+                border: 2px solid $DarkGray;
+            }
+        }
+
+        .form-body {
+            flex-grow: 1;
+            overflow-y: auto;
+            // border: 1px solid gray;
+            overflow-x: hidden;
+            border-bottom: 1px solid $BackGround;
+
+            //改滑軌樣式
+            &::-webkit-scrollbar {
+                width: 1rem;
+                // height: 4px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: $BackGround;
+                border-radius: 10px;
+                margin: 20px 0;
+                // padding: 20px 10px;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                border-radius: 10px;
+                background-color: $TitleGreen;
+            }
+
+            .long {
+                // height: 5000px;
+
+                //==上方提醒
+                .remind {
+                    >p {
+                        color: $Error;
+                        font-weight: 700;
+                        font-size: 1.2em;
+                        letter-spacing: 0.2em;
+                    }
+
+                    a {
+                        display: inline;
+                        font-weight: 700;
+                        color: $Black;
+                    }
+
+                }
+
+                //申請書填寫範圍
+                .formContent {
+                    .formItems {
+                        margin-bottom: 10px;
+                        font-size: 1rem;
+
+                        @media (max-width: 992px) {
+                            margin-bottom: 15px;
+                        }
+
+                        label {
+                            letter-spacing: .2rem;
+
+                            @media (max-width: 992px) {
+                                letter-spacing: .8rem;
+                            }
+
+                            //自訂-真正的欄位名稱
+                            &.labelTitle {
+                                color: $LightGreen;
+                                // color: $TitleYellow;
+                                font-weight: 700;
+                            }
+
+                            // 自訂-已顯示選項(區分非欄位名稱)
+                            &.optionsLabel {
+                                color: $Black;
+                                letter-spacing: normal;
+                            }
+
+                            &.w80 {
+                                width: 80%;
+                            }
+                        }
+
+                        //自訂-表示輸入框之用的下底線
+                        .bbLine {
+                            border-bottom: 1px solid $Gray;
+
+                            //視情況隱藏
+                            &.chooseHide {
+                                @media (max-width: 992px) {
+                                    border-bottom: none;
+                                }
+                            }
+
+                        }
+
+                        //視情況增加內距
+                        .form-check {
+                            padding-top: .35em;
+                            padding-left: 1.5em;
+
+                            @media (max-width: 992px) {
+                                padding: 3px 35px;
+                            }
+
+                            &.chooseHide {
+                                padding-top: .25em;
+                            }
+
+
+                        }
+
+                        //自訂-警示字
+                        .inputRemind {
+                            color: $Error;
+                            font-size: 14px;
+                        }
+
+                        input {
+
+                            //提示字
+                            &::placeholder {
+                                font-size: 14px;
+                                color: $Gray;
+                                letter-spacing: .2rem;
+                            }
+
+                        }
+
+                        .checkbox {
+                            --hover-scale: 0.92;
+                            --stroke-size: 0.6rem;
+                            width: 15rem;
+                            height: 15rem;
+                            background: #fff;
+                            border-radius: 20%;
+                            background: $colorSecondary;
+                            position: relative;
+                            cursor: pointer;
+                            overflow: hidden;
+                            transform: rotate(90deg);
+                            transition: 0.2s;
+                            animation: BackgroundFillOut 0.7s forwards;
+                        }
+
+                        .checkbox.-checked {
+                            animation: BackgroundFillIn 0.2s forwards;
+                        }
+
+                        .checkbox__background,
+                        .checkbox__border {
+                            transform: translate(var(--stroke-size), var(--stroke-size));
+                            width: calc(100% - var(--stroke-size) * 2);
+                            height: calc(100% - var(--stroke-size) * 2);
+                            transform-origin: center center;
+                            fill: #fff;
+                        }
+
+                        .checkbox__background {
+                            transition: 0.2s;
+                        }
+
+                        .checkbox__border {
+                            fill: none;
+                            stroke: $colorPrimary;
+                            stroke-width: 1.2rem;
+                            stroke-dasharray: 600;
+                            stroke-dashoffset: 600;
+                            stroke-linecap: round;
+                            animation: BorderFillOut forwards 0.75s;
+                        }
+
+                        .checkbox:hover .checkbox__background,
+                        .checkbox__background.-checked {
+                            transform: scale(var(--hover-scale)) translate(var(--stroke-size), var(--stroke-size));
+                        }
+
+                        .checkbox__border.-checked {
+                            animation: BorderFillIn forwards 0.75s;
+                        }
+
+                        .checkbox__check {
+                            transform: rotate(-90deg) translate(calc(50% - 3.5rem), calc(-50% + 8rem));
+                            transform-origin: center center;
+                            fill: none;
+                            stroke: $colorPrimary;
+                            stroke-dasharray: 300;
+                            stroke-dashoffset: 300;
+                            stroke-width: 1.2rem;
+                            stroke-linecap: round;
+                            stroke-linejoin: round;
+                            animation: MarkFillOut 0.4s forwards;
+                        }
+
+                        .checkbox__check.-checked {
+                            animation: MarkFillIn 0.4s forwards;
+                        }
+
+                        .-unchecked {
+                            animation: none;
+                        }
+
+                        @keyframes BorderFillIn {
+                            0% {
+                                stroke-dasharray: 600;
+                                stroke-dashoffset: 600;
+                            }
+
+                            60% {
+                                stroke-dasharray: 245;
+                                stroke-dashoffset: -240;
+                            }
+
+                            100% {
+                                stroke-dasharray: 0 500;
+                                stroke-dashoffset: -490;
+                            }
+                        }
+
+                        @keyframes BorderFillOut {
+                            0% {
+                                stroke-dasharray: 0 500;
+                                stroke-dashoffset: -490;
+                            }
+
+                            40% {
+                                stroke-dasharray: 245;
+                                stroke-dashoffset: -240;
+                            }
+
+                            100% {
+                                stroke-dasharray: 600;
+                                stroke-dashoffset: 600;
+                            }
+                        }
+
+                        @keyframes MarkFillIn {
+                            0% {
+                                stroke-dashoffset: 300;
+                                stroke-dasharray: 300;
+                            }
+
+                            100% {
+                                stroke-dasharray: 100, 100;
+                                stroke-dashoffset: -50;
+                            }
+                        }
+
+                        @keyframes MarkFillOut {
+                            0% {
+                                stroke-dasharray: 100, 100;
+                                stroke-dashoffset: -50;
+                            }
+
+                            100% {
+                                stroke-dasharray: 300;
+                                stroke-dashoffset: 300;
+                            }
+                        }
+
+                        @keyframes BackgroundFillIn {
+                            0% {
+                                background: $colorSecondaryLight;
+                            }
+
+                            100% {
+                                background: $colorPrimary;
+                            }
+                        }
+
+                        @keyframes BackgroundFillOut {
+                            0% {
+                                background: $colorPrimary;
+                            }
+
+                            100% {
+                                background: $colorSecondaryLight;
+                            }
+                        }
+
+                        .input-group {
+                            #email {
+                                border: 0;
+
+                                //檢查信箱按鈕
+                                ~button {
+                                    border-radius: 6px;
+                                    border: 0;
+                                    background-color: $TitleGreen;
+                                    color: $White;
+
+                                    &:hover {
+                                        background-color: $TitleYellow;
+                                    }
+                                }
+                            }
+
+                        }
+
+
+                        //自訂-主要輔導項目需求區塊
+                        &.need {
+                            .labelTitle {
+                                @media (max-width: 992px) {
+                                    letter-spacing: .6rem;
+                                }
+                            }
+
+                            .col-lg-9 {
+                                padding: .5rem 0;
+
+                                @media (max-width: 992px) {
+                                    padding: 0;
+                                }
+                            }
+
+                            #helpItems {
+                                // resize: none;
+                                height: 100px;
+                            }
+                        }
+
+                    }
+
+                    // ==上傳區域==
+                    .upLoadBox {
+                        border: 1px solid $Gray;
+                        border-radius: 20px;
+
+                        .upLoadTitle {
+                            letter-spacing: .5rem;
+                            font-weight: 700;
+                            font-size: 18px;
+                            color: $ttuRed;
+                        }
+
+                        .upLoadItem {
+                            margin-bottom: 1em;
+
+                            label {
+                                color: $Black;
+                                letter-spacing: .1em;
+                                cursor: pointer;
+                                margin-bottom: 0;
+
+                                &:hover {
+                                    color: $TitleGreen;
+                                }
+                            }
+
+                            input[type="file"] {
+                                display: none;
+                            }
+
+                            .fileInfo {
+                                color: $Gray;
+                                font-size: 14px;
+                            }
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .formfooter {}
+    }
+
+}

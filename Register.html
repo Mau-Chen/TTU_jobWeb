@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="~/img/favicon.ico" rel="shortcut icon" />
+    <title>大同大學校內育成媒合平台 - 申請加入</title>
+    <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" /> -->
+    <!-- <link rel="stylesheet" href="~/lib/font-awesome-4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="~/css/style.css"> -->
+    <link rel="stylesheet" href="./css/registerAccount.css">
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" /> -->
+
+</head>
+
+<body>
+    <!-- <partial name="_Notification" /> -->
+    <div class="container-fluid register py-5">
+        <form class="container p-2" method="post">
+            <div class="form-header">
+                <div class="row p-5 text-center">
+                    <h2 class="mx-auto col text-center mb-0">進駐申請</h2>
+                    <a href="../login.html" type="button" class="btn-close mx-1  rounded-circle col-auto p-2"
+                        aria-label="Close">
+                        <i class="bi bi-x"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="form-body">
+                <div class="long p-3">
+                    <div class="row remind mb-4 justify-content-center px-5">
+                        <p class="col px-5 mb-1">線上申請 需上傳下列已完成之掃描文件：</p>
+                        <div class="col-12 row justify-content-start text-start px-5">
+                            <p class="col-auto m-1 p-0">
+                                <a asp-controller="Download" asp-action="GetFile"
+                                    asp-route-fileName="F-A1410-002大同大學創新育成中心企業同意審查聲明書.odt"
+                                    class="text-decoration-none">
+                                    同意審查聲明書
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                </a>、
+                            </p>
+                            <p class="col-auto m-1 p-0">
+                                <a asp-controller="Download" asp-action="GetFile"
+                                    asp-route-fileName="F-A1410-003大同大學創新育成中心企業進駐申請書.odt" class="text-decoration-none">
+                                    創新育成中心進駐申請書
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                </a>、
+                            </p>
+                            <p class="col-auto m-1 p-0">
+                                <a asp-controller="Download" asp-action="GetFile"
+                                    asp-route-fileName="F-A1410-004大同大學創新育成中心企業申請進駐營運計畫書.odt"
+                                    class="text-decoration-none">
+                                    企業營運計畫構想書
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                </a>、
+                            </p>
+                            <p class="col-auto m-1 p-0">
+                                <a asp-controller="Download" asp-action="GetFile"
+                                    asp-route-fileName="F-A1410-005大同大學創新育成中心企業與教職員合作備忘錄.odt"
+                                    class="text-decoration-none">
+                                    企業與大同大學教職員簽訂之合作備忘錄
+                                    <i class="fa fa-download" aria-hidden="true"></i>
+                                </a>、
+                            </p>
+                            <p class="col-auto m-1 p-0">公司登記證、</p>
+                            <p class="col-auto m-1 p-0">營利事業登記證或預查名稱表影本、</p>
+                            <p class="col-auto m-1 p-0">進駐審查費繳費證明。</p>
+                        </div>
+                    </div>
+                    <div class="formContent pe-1">
+                        <!-- @Html.AntiForgeryToken() -->
+
+                        <div class="container-fluid">
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="companyName" class="col-form-label labelTitle"
+                                        asp-for="CompanyName">公司名稱：</label>
+                                </div>
+                                <div class="col-lg-10 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="companyName"
+                                        asp-for="CompanyName" placeholder="設立登記名稱">
+                                    <span asp-validation-for="CompanyName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="creationDate" class="col-form-label labelTitle"
+                                        asp-for="CreationDate">成立日期：</label>
+                                </div>
+                                <div class="col-lg-5 bbLine form-check chooseHide ">
+                                    <label class="form-check-label w80" for="creationDate">
+                                        <input class="form-check-input pe-2" type="radio" name="creationDate"
+                                            id="creationDate" onchange="toggleDateInput()" checked>
+                                        <input class="text-center" type="date" id="creationDateInput"
+                                            max="@DateTime.Now.ToString('yyyy-MM-dd')" asp-for="CreationDate">
+                                    </label>
+                                </div>
+                                <div class="col-lg-5 bbLine form-check ">
+                                    <label class="form-check-label optionsLabel" for="creationDateYet">
+                                        <input class="form-check-input" type="radio" name="creationDate"
+                                            id="creationDateYet" onchange="toggleDateInput()" value="null">
+                                        辦理公司登記中
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="capitalAmount" class="col-form-label labelTitle"
+                                        asp-for="CapitalAmount">資本額：</label>
+                                </div>
+                                <div class="col-lg-4 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="capitalAmount"
+                                        asp-for="CapitalAmount">
+                                    <span asp-validation-for="CapitalAmount" class="text-danger"></span>
+                                </div>
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="uniformNum" class="col-form-label labelTitle"
+                                        asp-for="UniformNum">統一編號：</label>
+                                </div>
+                                <div class="col-lg-4 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="uniformNum"
+                                        asp-for="UniformNum">
+                                    <span asp-validation-for="UniformNum" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="responsiblePerson" class="col-form-label labelTitle"
+                                        asp-for="ResponsiblePerson">負責人：</label>
+                                </div>
+                                <div class="col-lg-2 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="responsiblePerson"
+                                        asp-for="ResponsiblePerson">
+                                    <span asp-validation-for="ResponsiblePerson" class="text-danger"></span>
+                                </div>
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="majorShareholder" class="col-form-label labelTitle"
+                                        asp-for="MajorShareholder">主要股東：</label>
+                                </div>
+                                <div class="col-lg-2 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="majorShareholder"
+                                        asp-for="MajorShareholder">
+                                    <span asp-validation-for="MajorShareholder" class="text-danger"></span>
+                                </div>
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="employeesNum" class="col-form-label labelTitle"
+                                        asp-for="EmployeesNum">員工人數：</label>
+                                </div>
+                                <div class="col-lg-2 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="employeesNum"
+                                        asp-for="EmployeesNum">
+                                    <span asp-validation-for="EmployeesNum" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="companyAdd" class="col-form-label labelTitle"
+                                        asp-for="CompanyAdd">登記地址：</label>
+                                </div>
+                                <div class="col-lg-10 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="companyAdd"
+                                        asp-for="CompanyAdd" placeholder="設立登記地址">
+                                    <span asp-validation-for="CompanyAdd" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="locationOfCompany" class="col-form-label labelTitle"
+                                        asp-for="LocationOfCompany">通訊地址：</label>
+                                </div>
+                                <div class="col-lg-10 bbLine">
+                                    <div class="row">
+                                        <div class="col-lg-1 form-check">
+                                            <input class="form-check-input" type="checkbox" id="sameAdd">
+                                            <label class="form-check-label optionsLabel" for="sameAdd">同上</label>
+                                        </div>
+                                        <div class="col-lg-11">
+                                            <input type="text" class="form-control-plaintext"
+                                                asp-for="LocationOfCompany" id="locationOfCompany">
+                                            <span asp-validation-for="LocationOfCompany" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="contactPerson" class="col-form-label labelTitle"
+                                        asp-for="ContactPerson">聯絡人：</label>
+                                </div>
+                                <div class="col-lg-2 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="contactPerson"
+                                        asp-for="ContactPerson">
+                                    <span asp-validation-for="ContactPerson" class="text-danger"></span>
+                                </div>
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="jobTitle" class="col-form-label labelTitle"
+                                        asp-for="JobTitle">職稱：</label>
+                                </div>
+                                <div class="col-lg-2 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="jobTitle" asp-for="JobTitle">
+                                    <span asp-validation-for="JobTitle" class="text-danger"></span>
+                                </div>
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="ext" class="col-form-label labelTitle" asp-for="Ext">分機：</label>
+                                </div>
+                                <div class="col-lg-2 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="ext" asp-for="Ext">
+                                    <span asp-validation-for="Ext" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="faxNum" class="col-form-label labelTitle" asp-for="FaxNum">傳真：</label>
+                                </div>
+                                <div class="col-lg-4 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="faxNum" asp-for="FaxNum">
+                                    <span asp-validation-for="FaxNum" class="text-danger"></span>
+                                </div>
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="phoneNum" class="col-form-label labelTitle"
+                                        asp-for="PhoneNum">電話：</label>
+                                </div>
+                                <div class="col-lg-4 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="phoneNum" asp-for="PhoneNum">
+                                    <span asp-validation-for="PhoneNum" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="email" class="col-form-label labelTitle"
+                                        asp-for="Username">E-mail：</label>
+                                </div>
+                                <div class="col-lg-10 bbLine">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="email" asp-for="Username"
+                                            placeholder="abc@example.com">
+                                        <!-- <button type="button" class=""><input type="checkbox">檢查</button> -->
+                                        <svg class="checkbox -unchecked"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <rect class="checkbox__border -unchecked" rx="2.5rem" />
+                                                <rect class="checkbox__background" rx="2.5rem" />
+                                                <path class="checkbox__check -unchecked"
+                                                    d="M104.869,1.3,21.024,93.876.949,75.457" />
+                                            </svg>
+                                        <!-- <button type="button" class="">檢查</button> -->
+                                        <!-- https://codepen.io/Kia8/pen/zYxNxEe -->
+                                    </div>
+                                    <span asp-validation-for="Username" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="businessItems" class="col-form-label labelTitle"
+                                        asp-for="Profile">主要營業項目：</label>
+                                </div>
+                                <div class="col-lg-10 bbLine">
+                                    <input type="text" class="form-control-plaintext" id="businessItems"
+                                        asp-for="Profile" placeholder="請簡述">
+                                    <span asp-validation-for="Profile" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems need">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="helpItems" class="col-form-label labelTitle"
+                                        asp-for="HelpItems">駐育成中心主要輔導項目需求：</label>
+                                </div>
+                                <div class="col-lg-10">
+                                    <textarea class="form-control" rows="8" id="helpItems"
+                                        asp-for="HelpItems"></textarea>
+                                    <p class="text-end inputRemind">※技術、行銷、財務或商務支援等，請簡要敘述。</p>
+                                    <span asp-validation-for="HelpItems" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="row formItems">
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="createId" class="col-form-label labelTitle"
+                                        asp-for="UAccount">創建帳號：</label>
+                                </div>
+                                <div class="col-lg-5">
+                                    <input type="text" class="form-control-plaintext bbLine" id="createId"
+                                        asp-for="UAccount">
+                                    <p class="text-end inputRemind mb-1">※僅接受小寫字母、數字與下底線的組合。</p>
+                                    <span asp-validation-for="UAccount" class="text-danger"></span>
+                                </div>
+                                <div class="col-lg-2 text-lg-end">
+                                    <label for="referrer" class="col-form-label labelTitle"
+                                        asp-for="Referrer">推薦人：</label>
+                                </div>
+                                <div class="col-lg-3">
+                                    <input type="text" class="form-control-plaintext bbLine" id="referrer"
+                                        asp-for="Referrer">
+                                    <span asp-validation-for="Referrer" class="text-danger"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ==上傳區域== -->
+                        <div class="container-fluid mt-5">
+                            <div class="row justify-content-lg-center">
+                                <div class="col-md-10 upLoadBox p-3">
+                                    <div class="row">
+                                        <div class="col-lg-12 my-2">
+                                            <p class="upLoadTitle mb-0">檔案上傳：</p>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <div class="row">
+                                                <div class="col-auto upLoadItem">
+                                                    <label for="companyProof" class="form-label">
+                                                        公司登記證
+                                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                                    </label>
+                                                    <!-- <input class="form-control" type="file" id="companyProof"
+                                                        onchange="javascript:{document.getElementById('fileInfo1').innerHTML = document.getElementById('companyProof').value}"> -->
+                                                    <!-- <input class="form-control" type="file" id="companyProof"
+                                                        name="CompanyProofFile">  -->
+                                                    <input class="form-control" type="file" id="companyProof"
+                                                        name="CompanyProofFile" accept=".pdf"
+                                                        onchange="javascript:{document.getElementById('fileInfo1').innerHTML = document.getElementById('companyProof').value}">
+                                                    <div id="fileInfo1" class="fileInfo"></div>
+                                                </div>
+                                                <div class="col-auto upLoadItem">
+                                                    <label for="payProof" class="form-label">
+                                                        進駐審查費繳費證明
+                                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="form-control" type="file" id="payProof" accept=".pdf"
+                                                        onchange="javascript:{document.getElementById('fileInfo7').innerHTML = document.getElementById('payProof').value}">
+                                                    <div id="fileInfo7" class="fileInfo"></div>
+                                                </div>
+                                                <div class="col-auto upLoadItem">
+                                                    <label for="consentDoc" class="form-label">
+                                                        同意審查聲明書
+                                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="form-control" type="file" id="consentDoc"
+                                                        accept=".pdf"
+                                                        onchange="javascript:{document.getElementById('fileInfo3').innerHTML = document.getElementById('consentDoc').value}">
+                                                    <div id="fileInfo3" class="fileInfo"></div>
+                                                </div>
+                                                <div class="col-auto upLoadItem">
+                                                    <label for="businessProof" class="form-label">
+                                                        營利事業登記證或預查名稱表影本
+                                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="form-control" type="file" id="businessProof"
+                                                        accept=".pdf"
+                                                        onchange="javascript:{document.getElementById('fileInfo2').innerHTML = document.getElementById('businessProof').value}">
+                                                    <div id="fileInfo2" class="fileInfo"></div>
+                                                </div>
+                                                <div class="col-auto upLoadItem">
+                                                    <label for="entryForm" class="form-label">
+                                                        創新育成中心進駐申請書
+                                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="form-control" type="file" id="entryForm" accept=".pdf"
+                                                        onchange="javascript:{document.getElementById('fileInfo4').innerHTML = document.getElementById('entryForm').value}">
+                                                    <div id="fileInfo4" class="fileInfo"></div>
+                                                </div>
+                                                <div class="col-auto upLoadItem">
+                                                    <label for="planUpload" class="form-label">
+                                                        企業營運計畫構想書
+                                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="form-control" type="file" id="planUpload"
+                                                        accept=".pdf"
+                                                        onchange="javascript:{document.getElementById('fileInfo5').innerHTML = document.getElementById('planUpload').value}">
+                                                    <div id="fileInfo5" class="fileInfo"></div>
+                                                </div>
+                                                <div class="col-auto upLoadItem">
+                                                    <label for="memoUpload" class="form-label">
+                                                        企業與大同大學教職員簽訂之合作備忘錄
+                                                        <i class="fa fa-upload" aria-hidden="true"></i>
+                                                    </label>
+                                                    <input class="form-control" type="file" id="memoUpload"
+                                                        accept=".pdf"
+                                                        onchange="javascript:{document.getElementById('fileInfo6').innerHTML = document.getElementById('memoUpload').value}">
+                                                    <div id="fileInfo6" class="fileInfo"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="formfooter lightBoxBtn text-end pt-2 pe-3">
+                <button class="btn btn-outline-success mx-4" data-bs-dismiss="modal" type="submit" value="Submit">
+                    確定送出
+                </button>
+            </div>
+        </form>
+
+    </div>
+    <script src="~/js/jquery-3.7.1.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="~/js/my.js"></script>
+
+    <script>
+
+        //登記日期
+        function toggleDateInput() {
+            var dateInput = document.getElementById('creationDateInput');
+            var creationDateYet = document.getElementById('creationDateYet');
+            var uniformNum = document.getElementById('uniformNum');
+
+            if (document.getElementById('creationDate').checked) {
+                // 選 "creationDate"，啟用日期input，並設定 asp-for
+                dateInput.disabled = false;
+                uniformNum.placeholder = "";
+                uniformNum.disabled = false;
+                dateInput.setAttribute('asp-for', 'CreationDate');
+                creationDateYet.removeAttribute('asp-for');
+            } else {
+                // 選 "creationDateYet"，禁用日期input，並設定 asp-for
+                dateInput.disabled = true;
+                uniformNum.placeholder = "後補";
+                uniformNum.disabled = true;
+                creationDateYet.setAttribute('asp-for', 'CreationDate');
+                dateInput.removeAttribute('asp-for');
+            }
+        }
+        toggleDateInput();
+
+
+
+
+        //同上功能
+        document.getElementById('sameAdd').addEventListener('change', function () {
+            // console.log(document.getElementById('companyAdd').value);
+            // console.log('checkbox 狀態:', this.checked);
+            if (this.checked) {
+                // console.log('checkbox 狀態:', this.checked);
+                document.getElementById('locationOfCompany').value = document.getElementById('companyAdd').value;
+            }
+        });
+        //同上不勾
+        document.getElementById('locationOfCompany').addEventListener('change', function () {
+            document.getElementById('sameAdd').checked = false;
+        });
+
+
+
+
+
+        const checkbox = document.querySelector(".checkbox");
+        const checkboxBorder = checkbox.querySelector(".checkbox__border");
+        const checkboxCheck = checkbox.querySelector(".checkbox__check");
+        const checkboxBackground = checkbox.querySelector(".checkbox__background");
+
+        const toggleElementCheck = element => {
+            if (element.classList.contains("-unchecked")) {
+                element.classList.remove("-unchecked");
+            }
+            element.classList.toggle("-checked");
+        };
+
+        const check = () => {
+            checkboxBackground.classList.add("-checked");
+            toggleElementCheck(checkboxBorder);
+            setTimeout(() => {
+                toggleElementCheck(checkboxCheck);
+            }, 360);
+            setTimeout(() => {
+                toggleElementCheck(checkbox);
+            }, 400);
+        };
+
+        const unCheck = () => {
+            toggleElementCheck(checkboxCheck);
+            toggleElementCheck(checkbox);
+            setTimeout(() => {
+                toggleElementCheck(checkboxBorder);
+            }, 200);
+        };
+
+        let isSwitching = false;
+
+        const toggle = () => {
+            if (isSwitching) return;
+            isSwitching = true;
+            checkbox.classList.add("-animating");
+            const isChecked = checkboxBorder.classList.contains("-checked");
+            if (isChecked) {
+                unCheck();
+            } else check();
+        };
+
+        const handleAnimationEnd = () => {
+            isSwitching = false;
+            if (!checkboxBorder.classList.contains("-checked")) {
+                checkboxBackground.classList.remove("-checked");
+            }
+        };
+
+        checkbox.addEventListener("click", toggle);
+        checkboxBorder.addEventListener("animationend", handleAnimationEnd);
+
+    </script>
+
+
+</body>
+
+</html>

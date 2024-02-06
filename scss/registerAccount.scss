@@ -168,6 +168,9 @@ body {
                             font-size: 14px;
                         }
 
+
+
+
                         input {
 
                             //提示字
@@ -176,247 +179,205 @@ body {
                                 color: $Gray;
                                 letter-spacing: .2rem;
                             }
-
                         }
 
-                        .checkbox {
-                            --hover-scale: 0.92;
-                            --stroke-size: 0.6rem;
-                            width: 15rem;
-                            height: 15rem;
-                            background: #fff;
-                            border-radius: 20%;
-                            background: $colorSecondary;
-                            position: relative;
-                            cursor: pointer;
-                            overflow: hidden;
-                            transform: rotate(90deg);
-                            transition: 0.2s;
-                            animation: BackgroundFillOut 0.7s forwards;
-                        }
 
-                        .checkbox.-checked {
-                            animation: BackgroundFillIn 0.2s forwards;
-                        }
-
-                        .checkbox__background,
-                        .checkbox__border {
-                            transform: translate(var(--stroke-size), var(--stroke-size));
-                            width: calc(100% - var(--stroke-size) * 2);
-                            height: calc(100% - var(--stroke-size) * 2);
-                            transform-origin: center center;
-                            fill: #fff;
-                        }
-
-                        .checkbox__background {
-                            transition: 0.2s;
-                        }
-
-                        .checkbox__border {
-                            fill: none;
-                            stroke: $colorPrimary;
-                            stroke-width: 1.2rem;
-                            stroke-dasharray: 600;
-                            stroke-dashoffset: 600;
-                            stroke-linecap: round;
-                            animation: BorderFillOut forwards 0.75s;
-                        }
-
-                        .checkbox:hover .checkbox__background,
-                        .checkbox__background.-checked {
-                            transform: scale(var(--hover-scale)) translate(var(--stroke-size), var(--stroke-size));
-                        }
-
-                        .checkbox__border.-checked {
-                            animation: BorderFillIn forwards 0.75s;
-                        }
-
-                        .checkbox__check {
-                            transform: rotate(-90deg) translate(calc(50% - 3.5rem), calc(-50% + 8rem));
-                            transform-origin: center center;
-                            fill: none;
-                            stroke: $colorPrimary;
-                            stroke-dasharray: 300;
-                            stroke-dashoffset: 300;
-                            stroke-width: 1.2rem;
-                            stroke-linecap: round;
-                            stroke-linejoin: round;
-                            animation: MarkFillOut 0.4s forwards;
-                        }
-
-                        .checkbox__check.-checked {
-                            animation: MarkFillIn 0.4s forwards;
-                        }
-
-                        .-unchecked {
-                            animation: none;
-                        }
-
-                        @keyframes BorderFillIn {
-                            0% {
-                                stroke-dasharray: 600;
-                                stroke-dashoffset: 600;
-                            }
-
-                            60% {
-                                stroke-dasharray: 245;
-                                stroke-dashoffset: -240;
-                            }
-
-                            100% {
-                                stroke-dasharray: 0 500;
-                                stroke-dashoffset: -490;
-                            }
-                        }
-
-                        @keyframes BorderFillOut {
-                            0% {
-                                stroke-dasharray: 0 500;
-                                stroke-dashoffset: -490;
-                            }
-
-                            40% {
-                                stroke-dasharray: 245;
-                                stroke-dashoffset: -240;
-                            }
-
-                            100% {
-                                stroke-dasharray: 600;
-                                stroke-dashoffset: 600;
-                            }
-                        }
-
-                        @keyframes MarkFillIn {
-                            0% {
-                                stroke-dashoffset: 300;
-                                stroke-dasharray: 300;
-                            }
-
-                            100% {
-                                stroke-dasharray: 100, 100;
-                                stroke-dashoffset: -50;
-                            }
-                        }
-
-                        @keyframes MarkFillOut {
-                            0% {
-                                stroke-dasharray: 100, 100;
-                                stroke-dashoffset: -50;
-                            }
-
-                            100% {
-                                stroke-dasharray: 300;
-                                stroke-dashoffset: 300;
-                            }
-                        }
-
-                        @keyframes BackgroundFillIn {
-                            0% {
-                                background: $colorSecondaryLight;
-                            }
-
-                            100% {
-                                background: $colorPrimary;
-                            }
-                        }
-
-                        @keyframes BackgroundFillOut {
-                            0% {
-                                background: $colorPrimary;
-                            }
-
-                            100% {
-                                background: $colorSecondaryLight;
-                            }
-                        }
 
                         .input-group {
                             #email {
                                 border: 0;
 
                                 //檢查信箱按鈕
-                                ~button {
-                                    border-radius: 6px;
-                                    border: 0;
-                                    background-color: $TitleGreen;
-                                    color: $White;
+                                // ~button {
+                                //     border-radius: 6px;
+                                //     border: 0;
+                                //     background-color: $TitleGreen;
+                                //     color: $White;
 
-                                    &:hover {
-                                        background-color: $TitleYellow;
+                                //     &:hover {
+                                //         background-color: $TitleYellow;
+                                //     }
+                                // }
+                            }
+
+                            // #checkEmailBox {
+                            //     display: none;
+                            //     &:checked {
+                            //         +.checkEmailLabel {
+                            //             color: $LightGreen;
+                            //             // transform: translateX(8px);
+                            //             &::before {
+                            //                 margin-left: -3px;
+                            //                 vertical-align: -4px;
+                            //                 border-radius: 0px;
+                            //                 border-color: $DarkYellow;
+                            //                 border-top: 0;
+                            //                 border-left: 0;
+                            //                 width: 10px;
+                            //                 transform: rotate(40deg);
+                            //                 margin: 2px;
+                            //             }
+                            //         }
+                            //     }
+                            // }
+                            /*
+                            // .checkEmailLabel {
+                            //     letter-spacing: .1em;
+                            //     cursor: pointer;
+                            //     padding: 0 20px;
+                            //     font-weight: 700;
+                            //     color: $DarkRed;
+
+                            //     &::before {
+                            //         content: "";
+                            //         display: inline-block;
+                            //         width: 20px;
+                            //         height: 20px;
+                            //         border-radius: 5px;
+                            //         vertical-align: -6px;
+                            //         border: 4px solid $DarkRed;
+                            //         margin-left: -5px;
+                            //         transition: transform 0.2s ease, border-color 0.2s ease, width 0.2s ease, margin-left 0.2s ease, border-radius 0.2s ease;
+                            //         backface-visibility: hidden;
+                            //         margin: 3px;
+                            //         padding: 3px;
+                            //     }
+                            // }
+                            */
+                            .checkEmail {
+                                color: $Gray;
+                                font-weight: 700;
+                                line-height: 2.25rem;
+                                // padding: 4px;
+                                padding-left: 14px;
+                                letter-spacing: .2em;
+
+                                &::before {
+                                    content: "";
+                                    display: inline-block;
+                                    width: 20px;
+                                    height: 20px;
+                                    border-radius: 5px;
+                                    vertical-align: -7px;
+                                    border: 4px solid $Gray;
+                                    // margin-left: -5px;
+                                    transition: transform 0.2s ease, border-color 0.2s ease, width 0.2s ease, margin-left 0.2s ease, border-radius 0.2s ease;
+                                    backface-visibility: hidden;
+                                    margin: 3px;
+                                    padding: 3px;
+                                }
+
+                                &.valid {
+                                    color: $LightGreen;
+
+                                    &::before {
+                                        border-color: $LightGreen;
+                                        transition: transform 0.2s ease, border-color 0.2s ease, width 0.2s ease, margin-left 0.2s ease, border-radius 0.2s ease;
+                                    }
+
+                                    &::after {
+                                        content: "";
+                                        display: inline-block;
+                                        width: 10px;
+                                        height: 16px;
+                                        vertical-align: -6px;
+                                        border: 4px solid $Black;
+                                        margin-left: -3px;
+                                        border-top: 0;
+                                        border-left: 0;
+                                        transform: rotate(40deg) translate(-48px, 32px);
+                                        margin: 2px;
+                                    }
+                                }
+
+                                &.invalid {
+                                    color: $DarkRed;
+                                    letter-spacing: .1em;
+
+                                    &::before {
+                                        border-color: $DarkRed;
+                                    }
+
+                                    &::after {
+                                        content: "X";
+                                        font-weight: 700;
+                                        color: $Black;
+                                        display: inline-block;
+                                        margin-left: -3px;
+                                        transform: translate(-172px, 0px);
                                     }
                                 }
                             }
 
+
                         }
-
-
-                        //自訂-主要輔導項目需求區塊
-                        &.need {
-                            .labelTitle {
-                                @media (max-width: 992px) {
-                                    letter-spacing: .6rem;
-                                }
-                            }
-
-                            .col-lg-9 {
-                                padding: .5rem 0;
-
-                                @media (max-width: 992px) {
-                                    padding: 0;
-                                }
-                            }
-
-                            #helpItems {
-                                // resize: none;
-                                height: 100px;
-                            }
-                        }
-
                     }
 
-                    // ==上傳區域==
-                    .upLoadBox {
-                        border: 1px solid $Gray;
-                        border-radius: 20px;
-
-                        .upLoadTitle {
-                            letter-spacing: .5rem;
-                            font-weight: 700;
-                            font-size: 18px;
-                            color: $ttuRed;
+                    //自訂-主要輔導項目需求區塊
+                    &.need {
+                        .labelTitle {
+                            @media (max-width: 992px) {
+                                letter-spacing: .6rem;
+                            }
                         }
 
-                        .upLoadItem {
-                            margin-bottom: 1em;
+                        .col-lg-9 {
+                            padding: .5rem 0;
 
-                            label {
-                                color: $Black;
-                                letter-spacing: .1em;
-                                cursor: pointer;
-                                margin-bottom: 0;
-
-                                &:hover {
-                                    color: $TitleGreen;
-                                }
+                            @media (max-width: 992px) {
+                                padding: 0;
                             }
+                        }
 
-                            input[type="file"] {
-                                display: none;
-                            }
-
-                            .fileInfo {
-                                color: $Gray;
-                                font-size: 14px;
-                            }
-
+                        #helpItems {
+                            // resize: none;
+                            height: 100px;
                         }
                     }
 
                 }
+
+                // ==上傳區域==
+                .upLoadBox {
+                    border: 1px solid $Gray;
+                    border-radius: 20px;
+
+                    .upLoadTitle {
+                        letter-spacing: .5rem;
+                        font-weight: 700;
+                        font-size: 18px;
+                        color: $ttuRed;
+                    }
+
+                    .upLoadItem {
+                        margin-bottom: 1em;
+
+                        label {
+                            color: $Black;
+                            letter-spacing: .1em;
+                            cursor: pointer;
+                            margin-bottom: 0;
+
+                            &:hover {
+                                color: $TitleGreen;
+                            }
+                        }
+
+                        input[type="file"] {
+                            display: none;
+                        }
+
+                        .fileInfo {
+                            color: $Gray;
+                            font-size: 14px;
+                        }
+
+                    }
+                }
+
             }
         }
-
-        .formfooter {}
     }
 
+    .formfooter {}
 }

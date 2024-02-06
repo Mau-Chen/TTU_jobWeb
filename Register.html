@@ -235,22 +235,24 @@
                                     <label for="email" class="col-form-label labelTitle"
                                         asp-for="Username">E-mail：</label>
                                 </div>
-                                <div class="col-lg-10 bbLine">
+                                <!-- <div class="col-lg-10 bbLine">
                                     <div class="input-group">
                                         <input type="text" class="form-control" id="email" asp-for="Username"
                                             placeholder="abc@example.com">
-                                        <!-- <button type="button" class=""><input type="checkbox">檢查</button> -->
-                                        <svg class="checkbox -unchecked"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <rect class="checkbox__border -unchecked" rx="2.5rem" />
-                                                <rect class="checkbox__background" rx="2.5rem" />
-                                                <path class="checkbox__check -unchecked"
-                                                    d="M104.869,1.3,21.024,93.876.949,75.457" />
-                                            </svg>
-                                        <!-- <button type="button" class="">檢查</button> -->
-                                        <!-- https://codepen.io/Kia8/pen/zYxNxEe -->
+                                        <input type="checkbox" id="checkEmailBox">
+                                        <label class="checkEmailLabel" for="checkEmailBox"> 檢查</label>
                                     </div>
                                     <span asp-validation-for="Username" class="text-danger"></span>
+                                </div> -->
+                                <div class="col-lg-10 bbLine">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="email" asp-for="UEmail"
+                                            placeholder="abc@example.com">
+                                        <!-- <div class="checkEmail">檢查</div> -->
+                                        <!-- <div class="checkEmail valid">檢查</div> -->
+                                        <!-- <div class="checkEmail invalid">此Email已註冊過。</div> -->
+                                        <div class="checkEmail invalid">Email格式不正確。</div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row formItems">

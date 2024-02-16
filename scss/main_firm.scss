@@ -8,6 +8,70 @@
 @media (max-width: 992px) {}
 
 
+/* 共用版型BubbleIndex */
+.allWrapper.BubbleIndex {
+    .wrapperRight {
+        h5 {
+            color: $Gray;
+        }
+
+        .entranceItems {
+            display: block;
+            height: 120px;
+            width: 120px;
+            padding: 30px 20px;
+            background-color: $BackGround;
+            text-decoration: none;
+            color: $TitleGreen;
+            border-radius: 50%;
+
+            &:hover {
+                background-color: $TitleYellow;
+            }
+
+            p {
+                margin-bottom: 0;
+                line-height: 1.5rem;
+                font-size: 1rem;
+                font-weight: 700;
+
+                svg {
+                    font-weight: 700;
+                    width: 2rem;
+                    height: 2rem;
+                }
+            }
+
+            .parkingLot {
+                svg {
+                    width: 19px;
+                }
+            }
+        }
+    }
+}
+/* 共用版型JobCommon */
+.allWrapper.JobCommon{
+    .table{
+        tbody{
+            td{
+                button {
+                    width: 1.7em;
+                    padding: 0;
+                    line-height: 1em;
+                    border: 2px solid $Black;
+                    border-radius: 50%;
+                    padding: .1em;
+
+                    i {
+
+                        font-size: 1.2em;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 /*-- firmIndex --------------------------------------*/
@@ -49,44 +113,7 @@
     }
 
 
-    .wrapperRight {
-        h5 {
-            color: $Gray;
-        }
 
-        .entranceItems {
-            display: block;
-            height: 120px;
-            width: 120px;
-            padding: 30px 20px;
-            background-color: $BackGround;
-            text-decoration: none;
-            color: $TitleGreen;
-
-            &:hover {
-                background-color: $TitleYellow;
-            }
-
-            p {
-                margin-bottom: 0;
-                line-height: 32px;
-                font-size: 16px;
-                font-weight: 700;
-
-                svg {
-                    font-weight: 700;
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-
-            .parkingLot {
-                svg {
-                    width: 19px;
-                }
-            }
-        }
-    }
 }
 
 /*-- JobIndex -----------------------------------*/
@@ -167,19 +194,19 @@
                         max-width: 7em;
                     }
 
-                    button {
-                        width: 1.7em;
-                        padding: 0;
-                        line-height: 1em;
-                        border: 2px solid $Black;
-                        border-radius: 50%;
-                        padding: .1em;
+                    // button {
+                    //     width: 1.7em;
+                    //     padding: 0;
+                    //     line-height: 1em;
+                    //     border: 2px solid $Black;
+                    //     border-radius: 50%;
+                    //     padding: .1em;
 
-                        i {
-                            
-                            font-size: 1.2em;
-                        }
-                    }
+                    //     i {
+
+                    //         font-size: 1.2em;
+                    //     }
+                    // }
                 }
 
 
@@ -192,11 +219,12 @@
 
 // -- 職缺列表-燈箱區 --
 .jobLightBox {
-    h2{
+    h2 {
         color: $TitleGreen;
         letter-spacing: 0.8em;
         font-weight: 700;
     }
+
     .jobTable {
 
         .row {
@@ -297,4 +325,45 @@
     }
 
 
+}
+
+/*-- LoginHistory -----------------------------------*/
+.Login_History {
+    #form_search {
+        .pageBox {
+            letter-spacing: .1em;
+
+            .pageNum {
+                list-style: none;
+                display: inline-block;
+                width: auto;
+            }
+
+            .pageBox_right {
+                a {
+                    font-weight: 700;
+                    color: $LightGreen;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+
+/*-- RoleIndex -----------------------------------*/
+.allWrapper.RoleIndex {
+    .wrapperRight {
+        .entranceItems {
+            @media (max-width: 992px) {
+                margin-bottom: 1rem;
+                height: 2rem;
+                border-radius: 1em;
+                padding: 0;
+                p{
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
 }

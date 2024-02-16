@@ -1,0 +1,23 @@
+@import "layout";
+
+.Login_History {
+    #form_search {
+        .pageBox {
+            letter-spacing: .1em;
+
+            .pageNum {
+                list-style: none;
+                display: inline-block;
+                width: auto;
+            }
+
+            .pageBox_right{
+                a{
+                    font-weight: 700;
+                    color: $LightGreen;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
